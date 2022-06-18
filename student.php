@@ -13,12 +13,12 @@
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Universidad Popular Del Cesar <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+				Matematicas Basica <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
 			</div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
-					<img src="./logo.png " alt="UserIcon">
+					<img src="/img/user1.png" alt="UserIcon">
 				
 				</figure>
 			</div>
