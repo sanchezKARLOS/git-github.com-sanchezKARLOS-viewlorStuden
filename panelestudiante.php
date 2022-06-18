@@ -12,9 +12,7 @@
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
-			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematicas Basica <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
-			</div>
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">Matematicas Basica</div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
@@ -83,7 +81,7 @@
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">
-			<ul class="full-box list-unstyled text-right">
+			<ul class="full-box list-unstyled">
 				<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
