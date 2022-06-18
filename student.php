@@ -19,13 +19,13 @@
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
 					<img src="./logo.png " alt="UserIcon">
-					<figcaption class="text-center text-titles">SebastianCardenas</figcaption>
+				
 				</figure>
 			</div>
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.html">
+					<a href="home.php">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
 				</li>
@@ -60,8 +60,8 @@
 			<!-- Content page -->
 			<div class="container-fluid">
 				<div class="page-header">
-				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Sebastian Cardenas </br> 
-					<small>Editar Perfil</small></h1>
+				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Editar Estudiante </br> 
+					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
 			<div class="container-fluid">
@@ -74,60 +74,49 @@
 										<div class="col-xs-12 col-md-10 col-md-offset-1">
 											<form action="">
 												
-												<div class="form-group label-floating">
-												  <label class="control-label">Nombre</label>
-												  <input class="form-control" type="text">
-												</div>
-												<div class="form-group label-floating">
-												  <label class="control-label">Apellido</label>
-												  <input class="form-control" type="text">
-												</div>
-												<div class="form-group label-floating">
-												  <label class="control-label">Dirrecion</label>
-												  <textarea class="form-control"></textarea>
-												</div>
-												<div class="form-group label-floating">
-												  <label class="control-label">Correo Electronico</label>
-												  <input class="form-control" type="text">
-												</div>
-												<div class="form-group label-floating">
-												  <label class="control-label">Telefono-Celular</label>
-												  <input class="form-control" type="text">
-												</div>
-												<div class="form-group">
-												  <label class="control-label">Fecha Nacimiento</label>
-												  <input class="form-control" type="date">
-												</div>
-												<div class="form-group">
-													<label class="control-label">Sexo</label>
-													<select class="form-control">
-													  <option>Hombre</option>
-													  <option>Mujer</option>
-													</select>
-												</div>
-												<div class="form-group">
-												  <label class="control-label">Ingrese Una foto Frotal</label>
-												  <div>
-													<input type="text" readonly="" class="form-control" placeholder="Elegir...">
-													<input type="file" >
-												  </div>
-												</div>
-												<div class="form-group">
-													<label class="control-label">Seleccione Grado</label>
-													<select class="form-control">
-														<option>Cuarto</option>
-														<option>Quinto</option>
-													  <option>sexto</option>
-													  <option>septimo</option>
-													  <option>octavo</option>
-													  <option>Noveno</option>
-													  <option>Decimo</option>
-													  <option>Undecimo</option>
-													</select>
-												</div>
-												<br><br>
-												<p class="text-center">
-													<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Save</button>
+	<div class="inblcdiv1 inblcdiv2">
+    <div class="form-group label-floating">
+    <label for="id" id="labelid" name="labelid">Codigo Id
+    <input type="text" name="id" id="id" class="id"  maxlength="10" autocomplete="off" require></label>
+    <label for="nombre" id="labelnombre">Nombre
+    <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Ej: Juan." pattern=".{3,25}" autocomplete="off" ></label> 
+  <div id="error"><label for="error"></label></div>
+    </div>
+    </div>
+
+<div class="inblcdiv1 inblcdiv2">
+<div class="form-group label-floating">
+      <label for="apellido" id="labelapellido">Apellido
+    <input type="text" name="apellido" id="apellido" class="apellido"  placeholder="Ej: Quintero."  pattern=".{3,25}" autocomplete="off"></label>
+    <label for="tipoaep" id="labelrol">Tipo de rol
+    <select name="tipoaep" id="tipoaep" class="tipoaep" required>
+        <option value="1">Administrador</option>
+        <option value="2" selected>Docente</option>
+        <option value="3">Estudiante</option>
+    </select></label>
+   </div>
+</div>
+  
+<div class="inblcdiv1 inblcdiv2">
+<div class="form-group label-floating">  
+    <label for="grado" id="labelgrado">Grado
+    <input type="text" name="grado" id="Grado" class="grado" placeholder="Ej: Quinto."></label>
+    <label for="edad" id="labeledad">Edad
+    <input type="text" name="edad" id="edad" class="edad"  placeholder="Ej: 8."></label>
+    </div>
+</div>
+   
+<div class="inblcdiv1 inblcdiv2">
+<div class="form-group label-floating"> 
+  <label for="cdteacher" id="labelcdteacher">Id Profesor
+ <input type="text" name="cdteacher" id="cdteacher" class="cdteacher" placeholder="Ej: 1007582343." maxlength="10"></label>
+ <label for="clave"id="labelclave">Contraseña
+<input type="password" name="clave" id="clave" class="clave" placeholder="Contraseña."></label>
+</div>
+</div>
+    <br><br>
+	<p class="text-center">
+		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
 												</p>
 											</form>
 										</div>

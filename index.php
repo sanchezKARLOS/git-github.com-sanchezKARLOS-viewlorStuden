@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="cover" style="background-image: url(fondo.jpg);">
-	<form action="home.html" method="" autocomplete="off" class="full-box logInForm">
+<body class="cover" >
+	<form action="home.php" method="" autocomplete="off" class="full-box logInForm">
 		<p class="text-center text-muted"><i class="zmdi zmdi-account-circle zmdi-hc-5x"></i></p>
 		<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
 		<div class="form-group label-floating">
@@ -24,8 +24,8 @@
 			<input type="submit" value="Iniciar sesión" class="btn btn-raised btn-danger">
 		</div>
 		<div class="form-group text-center">
-			<label class="control-label">¿No has iniciado sesion?</label></br>
-			<a href="registrarstudent.html">Click aqui!</a></h4>
+			<label class="control-label">¿No tienes cuenta?</label></br>
+			<a href="registrarstudent.html">Contacta al Administrador!</a></h4>
 			
 		</div>
 	</form>

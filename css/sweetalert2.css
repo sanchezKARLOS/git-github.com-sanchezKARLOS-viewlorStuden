@@ -294,7 +294,7 @@ body.swal2-iosfix {
       -ms-user-select: none;
           user-select: none; }
   .swal2-icon.swal2-error {
-    border-color: #f27474; }
+    border-color: #e74545; }
     .swal2-icon.swal2-error .x-mark {
       position: relative;
       display: block; }
