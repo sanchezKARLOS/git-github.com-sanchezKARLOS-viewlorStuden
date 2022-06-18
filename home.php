@@ -13,13 +13,12 @@
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematica Basica<i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+				matematicas Basica <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
 			</div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
 					<img src="./img/user1.png" alt="UserIcon">
-					<!--<figcaption class="text-center text-titles">Administrador</figcaption>-->
 				</figure>
 			
 			</div>
@@ -92,17 +91,6 @@
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
 				<li>
-					<a href="student.html" title="editar perfil" >
-						<i class="zmdi zmdi-settings"></i>
-					</a>
-				</li>
-				<li>
-					<a href="#!" class="btn-Notifications-area">
-						<i class="zmdi zmdi-notifications-none"></i>
-						<span class="badge">7</span>
-					</a>
-				</li>
-				<li>
 					<a href="#!" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>
 					</a>
@@ -144,7 +132,7 @@
 			</article>	
 		</div>
 	</section>
-	<!-- Dialog help -->
+
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
 	<script src="./js/sweetalert2.min.js"></script>
@@ -156,6 +144,5 @@
 	<script>
 		$.material.init();
 	</script>
-
 </body>
 </html>
