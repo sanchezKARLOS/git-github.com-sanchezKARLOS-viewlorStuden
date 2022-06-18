@@ -19,7 +19,6 @@
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
 					<img src="/img/user1.png" alt="UserIcon">
-				
 				</figure>
 			</div>
 			<!-- SideBar Menu -->
