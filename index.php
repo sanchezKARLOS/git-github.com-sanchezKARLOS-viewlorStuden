@@ -67,7 +67,7 @@
                  </div>
                </div> 
                <div class="mean-last">
-                       <a href=""><a href="sESSIONES/index.php">Inicia Sesiòn</a></div> </a>           
+                       <a href=""><a href="SESSIONES/index.php">Inicia Sesiòn</a></div> </a>           
              </div>
            </div>
          </div>

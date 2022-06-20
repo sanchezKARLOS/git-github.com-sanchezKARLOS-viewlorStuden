@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="cover" >
-	<form action="home.php" method="" autocomplete="off" class="full-box logInForm">
+	<div class="prim" id="prim1">
+		<div class="segun" id="segun2">
+			<div class="terc" id="terc3">
+			<form action="home.php" method="" autocomplete="off" class="full-box logInForm">
 		<p class="text-center text-muted"><i class="zmdi zmdi-account-circle zmdi-hc-5x"></i></p>
 		<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
 		<div class="form-group label-floating">
@@ -29,6 +32,10 @@
 			
 		</div>
 	</form>
+			</div>
+		</div>
+	</div>
+	
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
