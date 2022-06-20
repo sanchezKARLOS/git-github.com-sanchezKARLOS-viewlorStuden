@@ -13,7 +13,7 @@
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematicas Basica <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+				Matematicas Basica
 			</div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
@@ -46,7 +46,10 @@
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">
-			<ul class="full-box list-unstyled text-right">
+			<ul class="full-box list-unstyled">
+			<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
 				<li>
 					<a href="#!" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>
@@ -63,6 +66,8 @@
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
+			<!--from-->
+
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
@@ -73,8 +78,8 @@
 										<div class="col-xs-12 col-md-10 col-md-offset-1">
 											<form action="">
 												
-	<div class="inblcdiv1 inblcdiv2">
-    <div class="form-group label-floating">
+											<div class="inblcdiv1 inblcdiv2">
+    <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id
     <input type="text" name="id" id="id" class="id"  maxlength="10" autocomplete="off" require></label>
     <label for="nombre" id="labelnombre">Nombre
@@ -84,7 +89,7 @@
     </div>
 
 <div class="inblcdiv1 inblcdiv2">
-<div class="form-group label-floating">
+<div class="regforblock">
       <label for="apellido" id="labelapellido">Apellido
     <input type="text" name="apellido" id="apellido" class="apellido"  placeholder="Ej: Quintero."  pattern=".{3,25}" autocomplete="off"></label>
     <label for="tipoaep" id="labelrol">Tipo de rol
@@ -97,7 +102,7 @@
 </div>
   
 <div class="inblcdiv1 inblcdiv2">
-<div class="form-group label-floating">  
+<div class="regforblock">  
     <label for="grado" id="labelgrado">Grado
     <input type="text" name="grado" id="Grado" class="grado" placeholder="Ej: Quinto."></label>
     <label for="edad" id="labeledad">Edad
@@ -106,7 +111,7 @@
 </div>
    
 <div class="inblcdiv1 inblcdiv2">
-<div class="form-group label-floating"> 
+<div class="regforblock"> 
   <label for="cdteacher" id="labelcdteacher">Id Profesor
  <input type="text" name="cdteacher" id="cdteacher" class="cdteacher" placeholder="Ej: 1007582343." maxlength="10"></label>
  <label for="clave"id="labelclave">Contraseña
@@ -127,6 +132,11 @@
 				</div>
 			</div>
 
+
+
+
+		
+<!--end from-->
 	
 	<!-- Notifications area -->
 	

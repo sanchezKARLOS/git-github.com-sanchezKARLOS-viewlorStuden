@@ -26,7 +26,7 @@
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.html">
+					<a href="home.php">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
 				</li>
@@ -48,7 +48,7 @@
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">
-			<ul class="full-box list-unstyled text-right">
+			<ul class="full-box list-unstyled ">
 				<li>
 					<a href="#!" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>

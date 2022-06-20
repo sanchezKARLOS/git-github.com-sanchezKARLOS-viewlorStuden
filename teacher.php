@@ -46,7 +46,10 @@
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">
-			<ul class="full-box list-unstyled text-right">
+			<ul class="full-box list-unstyled">
+			<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
 				<li>
 					<a href="#!" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>
@@ -78,14 +81,14 @@
     <label for="id" id="labelid">Codigo Id
     <input type="text" name="id" id="id" placeholder="Id" onblur="reviscodigo();" onkeypress="solonumero(event);"  maxlength="10" require></label>
     <label for="nombre" id="labelnombre">Nombre
-    <input type="text" name="nombre" id="nombre" placeholder="nombre" onfocus="vaciarplaceholder(this);" onkeypress="revisnombre(event);" pattern=".{3,15}" required ></label>
+    <input type="text" name="nombre" id="nombre" placeholder="Ej: Andres." onfocus="vaciarplaceholder(this);" onkeypress="revisnombre(event);" pattern=".{3,15}" required ></label>
     </div>
 </div>
 
    <div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
     <label for="apellido" id="apellido">Apellido
-    <input type="text" name="apellido" id="apellido" placeholder="apellido" onfocus="vaciarplaceholder(this);" pattern=".{3,15}" required></label>
+    <input type="text" name="apellido" id="apellido" placeholder="Ej: Carvajal." onfocus="vaciarplaceholder(this);" pattern=".{3,15}" required></label>
     <label for="tipoaep" id="labelrol">Tipo de rol
     <select name="tipoaep" id="tipoaep" required>
         <option value="1">Administrador</option>
@@ -98,7 +101,7 @@
    <div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
     <label for="clave"id="labelclave">Ingrese Contraseña
-    <input type="password" name="clave" id="clave" placeholder="Contraseña" onfocus="vaciarplaceholder(this);"  maxlength="10"; required></label>
+    <input type="password" name="clave" id="clave" placeholder="Contraseña." onfocus="vaciarplaceholder(this);"  maxlength="10"; required></label>
     </div>
 </div>
     <br><br>

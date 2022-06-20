@@ -55,7 +55,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">Ver Horario</a>
+					<a href="horario.php" class="btn-sideBar-SubMenu">Ver Horario</a>
 				</li>
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">Ver Hoja de vida Estudiante</a>
