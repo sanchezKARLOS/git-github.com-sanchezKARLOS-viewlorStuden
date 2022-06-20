@@ -183,7 +183,7 @@ body, html{
 	outline: none;
 }
 .dashboard-sideBar-Menu > li > a:hover{
-	background-color: rgba(255, 255, 255, .1);
+	background-color: rgb(30 54 143 / 29%);
 }
 .dashboard-sideBar-Menu > li > ul{
 	position: relative;
