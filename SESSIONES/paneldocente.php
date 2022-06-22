@@ -86,7 +86,7 @@
 				<li>
 					<a href="#!" class="btn-Notifications-area">
 						<i class="zmdi zmdi-notifications-none"></i>
-						<span class="badge">1</span>
+					
 					</a>
 				</li>
 				<li>
@@ -119,35 +119,9 @@
 						<i class="zmdi zmdi-alert-triangle"></i>
 				    </div>
 				    <div class="row-content">
-				      	<div class="least-content">45m</div>
-				      	<h4 class="list-group-item-heading">Carlos Sanchez C</h4>
-				      	<p class="list-group-item-text">Profe, buen dia</p>
-				    </div>
-			  	</div> 	
-			</div>
-			<div class="list-group">
-			  	<div class="list-group-separator"></div>
-			  	<div class="list-group-item">
-				    <div class="row-action-primary">
-						<i class="zmdi zmdi-alert-triangle"></i>
-				    </div>
-				    <div class="row-content">
-				      	<div class="least-content">25m</div>
-				      	<h4 class="list-group-item-heading">Carlos Sanchez C</h4>
-				      	<p class="list-group-item-text">para comentarle que tengo problemas con el curso</p>
-				    </div>
-			  	</div> 	
-			</div>
-			<div class="list-group">
-			  	<div class="list-group-separator"></div>
-			  	<div class="list-group-item">
-				    <div class="row-action-primary">
-						<i class="zmdi zmdi-alert-triangle"></i>
-				    </div>
-				    <div class="row-content">
-				      	<div class="least-content">5m</div>
-				      	<h4 class="list-group-item-heading">Carlos Sanchez C</h4>
-				      	<p class="list-group-item-text">Profe!!!!!</p>
+				      <?php	
+					  require("cajatext.html");
+					  ?>
 				    </div>
 			  	</div> 	
 			</div>
