@@ -115,9 +115,6 @@
 			<div class="list-group">
 			  	<div class="list-group-separator"></div>
 			  	<div class="list-group-item">
-				    <div class="row-action-primary">
-						<i class="zmdi zmdi-alert-triangle"></i>
-				    </div>
 				    <div class="row-content">
 				      <?php	
 					  require("cajatext.html");
