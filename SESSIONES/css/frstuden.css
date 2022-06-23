@@ -70,6 +70,8 @@ label#labeledad{padding-left: 10px;}
 
 
 input{
+  font-size: 16px;
+  color: black;
   border:0;
   border-radius: 5px;
   outline: none;
