@@ -69,15 +69,15 @@
 			</div>
 			<!--from-->
 
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12">
-						<div id="myTabContent" class="tab-content">
-							<div class="tab-pane fade active in" id="new">
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-xs-12 col-md-10 col-md-offset-1">
-											<form action="studendb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div id="myTabContent" class="tab-content">
+<div class="tab-pane fade active in" id="new">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-md-10 col-md-offset-1">
+<form action="studendb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
     <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id

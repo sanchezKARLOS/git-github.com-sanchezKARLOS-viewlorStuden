@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/frstuden.css">
 </head>
 <body>
 	<!-- SideBar -->
@@ -74,13 +75,16 @@
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-xs-12 col-md-10 col-md-offset-1">
-											<form action="">
+											<form action="teacherdb.php" class="from" id="from" method="POST" onsubmit="return checkStuff()">
 												
 											<div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
     <label for="id" id="labelid">Codigo Id
     <input type="text" name="id" id="id" placeholder="Id" onblur="reviscodigo();" onkeypress="solonumero(event);"  maxlength="10" require></label>
-    <label for="nombre" id="labelnombre">Nombre
+</div>
+</div>
+<div class="regforblock">
+   <label for="nombre" id="labelnombre">Nombre
     <input type="text" name="nombre" id="nombre" placeholder="Ej: Andres." onfocus="vaciarplaceholder(this);" onkeypress="revisnombre(event);" pattern=".{3,15}" required ></label>
     </div>
 </div>
@@ -89,7 +93,11 @@
    <div class="regforblock">
     <label for="apellido" id="apellido">Apellido
     <input type="text" name="apellido" id="apellido" placeholder="Ej: Carvajal." onfocus="vaciarplaceholder(this);" pattern=".{3,15}" required></label>
-    <label for="tipoaep" id="labelrol">Tipo de rol
+</div>
+</div>
+<div class="inblcdiv1 inblcdiv2">
+   <div class="regforblock">
+   <label for="tipoaep" id="labelrol">Tipo de rol
     <select name="tipoaep" id="tipoaep" required>
         <option value="1">Administrador</option>
         <option value="2" selected>Docente</option>

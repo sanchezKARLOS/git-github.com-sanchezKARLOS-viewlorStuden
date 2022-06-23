@@ -46,27 +46,10 @@ legend h1{
 
 }
 
-label#labelid,
-#labelnombre{
- padding-left: 12px;
-  display: inline;
-}
-label#apellido{
-  padding-left: 55px;
-  display: inline;
-}
-
-#labelrol,
-#labelgrado,
-#labeledad{
-  padding-left: 22px;
-   display: inline;
- }
- label#labelgrado,
-#labeledad{
-  padding-left: 35px;
-   display: inline;
- }
+label#labelid{ padding-left:1px;}
+label#labelnombre{padding-left:5px;}
+label#labelgrado{padding-left:40px;}
+label#labeledad{padding-left: 10px;}
 
 #userplaceholder{
   display: block;
@@ -86,15 +69,15 @@ label#apellido{
 }
 
 input{
-  width: 50%;
-  background-color: rgb(245, 245, 245);
+  width: 100%;
+  background-color: rgb(198, 205, 207);
 }
 
 input:hover{
   background-color: rgb(216, 209, 209);
 }
 input:focus{
-  background-color:rgb(235, 233, 243);
+  background-color:rgb(160, 201, 240);
 }
 
 .d1_title::after{
@@ -116,9 +99,6 @@ input:focus{
   margin: 0 auto; 
 }
 .inblcdiv1{
-  display: inline block;
-  padding:10px;
+  display: inline;
+  padding:14px;
 }
-
-
-/* inspired https://www.youtube.com/watch?v=gdA1G5h-D80 */
