@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Student</title>
+	<title>Estudiante</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/frstuden.css">
 </head>
 <body>
 	<!-- SideBar -->
@@ -84,7 +85,6 @@
     <input type="text" name="id" id="id" class="id"  maxlength="10" autocomplete="off" require></label>
     <label for="nombre" id="labelnombre">Nombre
     <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Ej: Juan." pattern=".{3,25}" autocomplete="off" ></label> 
-  <div id="error"><label for="error"></label></div>
     </div>
     </div>
 

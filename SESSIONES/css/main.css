@@ -34,6 +34,8 @@
     font-style: normal;
 }
 /*============ Estilos generales*/
+
+
 body, html{
 	background-color: rgb(237 236 236);
 	width: 100%;
@@ -58,7 +60,7 @@ body, html{
 	block;
 	margin-left: auto;
 	right: auto;
-	background: #003147; 
+	background-color: rgb(222, 222, 224);
 }
 .text-titles{
 	font-family: 'RobotoCondensedLight'
@@ -66,16 +68,20 @@ body, html{
 /*============ LogIn*/
 .logInForm{
 	position: absolute;
+	z-index: 5;
 	color: #fff;
-	padding-bottom: 5%;top: 50%;
-	height: 60%;left: 50%;
+	padding-bottom: 5%;
+	top: 50%;
+	height: 80%;
+	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 90%;
-	max-width: 300px;
+	width: 100%;
+	max-width: 350px;
 	padding: 12px;
-	box-shadow: 0 0 7px 0px rgb(0 0 0 / 70%);
-	border-radius: 0 0 2px 2px;
-	background-color:transparent;
+	box-shadow: 0 0 7px 0px rgba(78, 72, 95, 0.7);
+	border-radius: 0 0 1px 1px;
+	 background-color:
+	transparent; 
 }
 .logInForm p,
 .logInForm label{
@@ -608,4 +614,35 @@ body, html{
 	.no-paddin-left{
 		padding-left: 0;
 	}
+}
+
+div#prim1{
+	position:
+	relative;
+	background-color: #c2c2d1;
+	width: 89%;
+	height: 90%;
+	margin: 0 auto;
+}
+div#prim1,
+#segun2{
+	padding-top: 20px;
+}
+div#segun2{
+	background-color: transparent;
+	width: 70%;
+	height:96%;
+	margin: 0 auto;
+}
+div#prim1, #segun2, #terc3{
+	padding-top: 20px;
+}
+div#terc3{
+	border-radius: 12px;
+	margin: 0 auto;
+	position: relative;
+	width: 60%;
+	max-width: 400px;
+	height: 90%;
+	background-color: #003147 ;
 }
