@@ -67,17 +67,16 @@
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12">
-						<div id="myTabContent" class="tab-content">
-							<div class="tab-pane fade active in" id="new">
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-xs-12 col-md-10 col-md-offset-1">
-											<form action="teacherdb.php" class="from" id="from" method="POST" onsubmit="return checkStuff()">
-												
-											<div class="inblcdiv1 inblcdiv2">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div id="myTabContent" class="tab-content">
+<div class="tab-pane fade active in" id="new">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-md-10 col-md-offset-1">
+<form action="teacherdb.php" class="from" id="from" method="POST" onsubmit="return checkStuff()">
+<div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
     <label for="id" id="labelid">Codigo Id
     <input type="text" name="id" id="id" placeholder="Id" onblur="reviscodigo();" onkeypress="solonumero(event);"  maxlength="10" require></label>
@@ -91,7 +90,7 @@
 
    <div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
-    <label for="apellido" id="apellido">Apellido
+    <label for="apellido" id="labelapellido">Apellido
     <input type="text" name="apellido" id="apellido" placeholder="Ej: Carvajal." onfocus="vaciarplaceholder(this);" pattern=".{3,15}" required></label>
 </div>
 </div>

@@ -12,15 +12,15 @@
 			<div class="terc" id="terc3">
 			<form action="home.php" method="post" autocomplete="off" class="full-box logInForm" id="formindex">
 		<p class="text-center text-muted"><i class="zmdi zmdi-account-circle zmdi-hc-5x"></i></p>
-		<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
+		<p class="text-center text-muted text-uppercase">Iniciar sesión</p>
 		<div class="form-group label-floating">
-		  <label class="control-label" for="UserEmail">E-mail</label>
-		  <input class="form-control" id="UserEmail" type="email">
-		  <p class="help-block">Escribe tú E-mail</p>
+		  <label class="control-label" for="UserEmail">Usuario</label>
+		  <input class="form-control" id="UserEmail" type="text">
+		  <p class="help-block">Escribe tú usuario</p>
 		</div>
 		<div class="form-group label-floating">
 		  <label class="control-label" for="UserPass">Contraseña</label>
-		  <input class="form-control" id="UserPass" type="text">
+		  <input class="form-control" id="UserPass" type="password">
 		  <p class="help-block">Escribe tú contraseña</p>
 		</div>
 		<div class="form-group text-center">
