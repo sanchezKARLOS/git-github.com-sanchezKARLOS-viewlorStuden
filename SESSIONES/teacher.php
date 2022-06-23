@@ -77,15 +77,17 @@
 <div class="col-xs-12 col-md-10 col-md-offset-1">
 <form action="teacherdb.php" class="from" id="from" method="POST" onsubmit="return checkStuff()">
 <div class="inblcdiv1 inblcdiv2">
-   <div class="regforblock">
-    <label for="id" id="labelid">Codigo Id
-    <input type="text" name="id" id="id" placeholder="Id" onblur="reviscodigo();" onkeypress="solonumero(event);"  maxlength="10" require></label>
-</div>
-</div>
 <div class="regforblock">
-   <label for="nombre" id="labelnombre">Nombre
-    <input type="text" name="nombre" id="nombre" placeholder="Ej: Andres." onfocus="vaciarplaceholder(this);" onkeypress="revisnombre(event);" pattern=".{3,15}" required ></label>
-    </div>
+<label for="id" id="labelid">Codigo Id
+<input type="text" name="id" id="id" placeholder="Id." onblur="reviscodigo();" onkeypress="solonumero(event);"  maxlength="10" require></label>
+</div>
+</div>
+
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">
+<label for="nombre" id="labelnombre">Nombre
+<input type="text" name="nombre" id="nombre" placeholder="Ej: Andres." onfocus="vaciarplaceholder(this);" onkeypress="revisnombre(event);" pattern=".{3,15}" required ></label>
+</div>
 </div>
 
    <div class="inblcdiv1 inblcdiv2">
@@ -105,25 +107,26 @@
 </div>
 </div>
 
-   <div class="inblcdiv1 inblcdiv2">
-   <div class="regforblock">
-    <label for="clave"id="labelclave">Ingrese Contraseña
-    <input type="password" name="clave" id="clave" placeholder="Contraseña." onfocus="vaciarplaceholder(this);"  maxlength="10"; required></label>
-    </div>
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">
+<label for="clave"id="labelclave">Ingrese Contraseña
+<input type="password" name="clave" id="clave" placeholder="Contraseña." maxlength="15"; required></label>
 </div>
+</div>
+
     <br><br>
 	<p class="text-center">
 		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
 												</p>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 	
 	<!-- Notifications area -->

@@ -81,7 +81,7 @@
     <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id
-    <input type="text" name="id" id="id" class="id"  maxlength="10" autocomplete="off" require></label>
+    <input type="text" name="id" id="id" class="id"  placeholder="Id." maxlength="10" autocomplete="off" require></label>
      </div>
     </div>
 
