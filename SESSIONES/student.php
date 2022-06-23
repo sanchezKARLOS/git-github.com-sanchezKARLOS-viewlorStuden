@@ -77,12 +77,16 @@
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-xs-12 col-md-10 col-md-offset-1">
-											<form action="">
-												
-											<div class="inblcdiv1 inblcdiv2">
+											<form action="studendb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
+    <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id
     <input type="text" name="id" id="id" class="id"  maxlength="10" autocomplete="off" require></label>
+     </div>
+    </div>
+
+	<div class="inblcdiv1 inblcdiv2">
+    <div class="regforblock">
     <label for="nombre" id="labelnombre">Nombre
     <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Ej: Juan." pattern=".{3,25}" autocomplete="off" ></label> 
     </div>
@@ -91,8 +95,13 @@
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
       <label for="apellido" id="labelapellido">Apellido
-    <input type="text" name="apellido" id="apellido" class="apellido"  placeholder="Ej: Quintero."  pattern=".{3,25}" autocomplete="off"></label>
-    <label for="tipoaep" id="labelrol">Tipo de rol
+    <input type="text" name="apellido" id="apellido" class="apellido"  placeholder="Ej: Quintero." pattern=".{3,25}" autocomplete="off"></label>
+   </div>
+</div>
+
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">
+  <label for="tipoaep" id="labelrol">Tipo de rol
     <select name="tipoaep" id="tipoaep" class="tipoaep" required>
         <option value="1">Administrador</option>
         <option value="2" selected>Docente</option>
@@ -105,16 +114,24 @@
 <div class="regforblock">  
     <label for="grado" id="labelgrado">Grado
     <input type="text" name="grado" id="Grado" class="grado" placeholder="Ej: Quinto."></label>
+ </div>
+</div>
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">  
     <label for="edad" id="labeledad">Edad
     <input type="text" name="edad" id="edad" class="edad"  placeholder="Ej: 8."></label>
-    </div>
+</div>
 </div>
    
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock"> 
   <label for="cdteacher" id="labelcdteacher">Id Profesor
  <input type="text" name="cdteacher" id="cdteacher" class="cdteacher" placeholder="Ej: 1007582343." maxlength="10"></label>
- <label for="clave"id="labelclave">Contraseña
+ </div>
+</div>
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock"> 
+  <label for="clave"id="labelclave">Contraseña
 <input type="password" name="clave" id="clave" class="clave" placeholder="Contraseña."></label>
 </div>
 </div>
