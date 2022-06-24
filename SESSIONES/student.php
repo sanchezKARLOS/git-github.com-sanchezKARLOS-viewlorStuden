@@ -1,3 +1,7 @@
+<?php
+include ("basedatos.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -102,11 +106,18 @@
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
   <label for="tipoaep" id="labelrol">Tipo de rol
-    <select name="tipoaep" id="Id_Roles" class="tipoaep" required>
-        <option value="1">Administrador</option>
-        <option value="2" selected>Docente</option>
-        <option value="3">Estudiante</option>
-    </select></label>
+
+    <select name="Id_Roles" id="Id_Roles" class="tipoaep" required>
+		<?php
+	$sql = "select * from roles";
+	$buscarindex=$conex->query($sql);
+	while($fila=$buscarindex->fetch_Array()){
+		echo"<option value='".$fila['id']."'>".$fila['estado']."
+		</option>";
+	}
+	?>
+    </select>
+</label>
    </div>
 </div>
   
