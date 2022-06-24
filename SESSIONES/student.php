@@ -1,7 +1,3 @@
-<?php
-include ("basedatos.php");
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -106,21 +102,18 @@ include ("basedatos.php");
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
   <label for="tipoaep" id="labelrol">Tipo de rol
-
-    <select name="Id_Roles" id="Id_Roles" class="tipoaep" required>
+    <select name="id" id="Id_Roles" class="tipoaep" required>
 		<?php
+		include ("basedatos.php");
 	$sql = "select * from roles";
-	$buscarindex=$conex->query($sql);
-	while($fila=$buscarindex->fetch_Array()){
-		echo"<option value='".$fila['id']."'>".$fila['estado']."
-		</option>";
+	$resultado = mysqli_query($query, $sql);
+	while($fila=mysqli_fetch_array($resultado)){
+		echo"<option value='".$fila['id']."'>".$fila['estado']."</option>";
 	}
 	?>
-    </select>
-</label>
+    </select></label>
    </div>
 </div>
-  
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">  
     <label for="grado" id="labelgrado">Grado
