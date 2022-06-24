@@ -1,21 +1,17 @@
 <?php 
     
-$id=$_POST['id'];
-$tipoaep=$_POST['tipoaep'];
-$nombre=$_POST['nombre'];
-$apellido=$_POST['apellido'];
-$edad=$_POST['edad'];
-$grado=$_POST['grado'];
-$cdteacher=$_POST['cdteacher'];
-$clave=$_POST['clave'];
+$Id_IdPersona=$_POST['Id_IdPersona'];
+$Cd_Docente=$_POST['Cd_Docente'];
+$Grado=$_POST['Grado'];
+$Nota=$_POST['Nota'];
 
 
 $query =mysqli_connect("localhost", "root", "", "softwareducativo");
- $sql = "INSERT INTO Personas(id, tipoaep, nombre , apellido, edad, grado, cdteacher, clave)VALUES ('$id', '$tipoaep', '$nombre', '$apellido', '$edad', '$grado', '$cdteacher', '$clave')";
+ $sql = "INSERT INTO estudiante(Id_IdPersona, Cd_Docente, Grado, Nota)VALUES 
+ ('$Id_IdPersona', '$Cd_Docente', '$Grado', '$Nota')";
  $resultado =mysqli_query($query, $sql);
  if(!$resultado){
      echo "problema al registrar un estudiante";
-
  }
  else{
      header('location:panelestudiante.php');

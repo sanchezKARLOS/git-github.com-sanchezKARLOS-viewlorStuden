@@ -102,7 +102,7 @@
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
   <label for="tipoaep" id="labelrol">Tipo de rol
-    <select name="tipoaep" id="tipoaep" class="tipoaep" required>
+    <select name="tipoaep" id="Id_Roles" class="tipoaep" required>
         <option value="1">Administrador</option>
         <option value="2" selected>Docente</option>
         <option value="3">Estudiante</option>
