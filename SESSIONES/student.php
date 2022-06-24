@@ -103,15 +103,20 @@
 <div class="regforblock">
   <label for="tipoaep" id="labelrol">Tipo de rol
     <select name="id" id="Id_Roles" class="tipoaep" required>
-		<?php
-		include ("basedatos.php");
-	$sql = "select * from roles";
-	$resultado = mysqli_query($query, $sql);
-	while($fila=mysqli_fetch_array($resultado)){
-		echo"<option value='".$fila['id']."'>".$fila['estado']."</option>";
+	<?php
+$query =mysqli_connect("localhost", "root", "", "softwareducativo");
+ $sql = "select * from roles order by id";
+ $resultado = mysqli_query($query, $sql);
+ while ($mostrar = mysqli_fetch_array($resultado)){
+        $id = $mostrar['id'];
+		$estado = $mostrar['estado'];
+		?>
+	<option value="<?php echo $id; ?>"> <?php echo $estado." "?></option>
+	<?php
 	}
 	?>
-    </select></label>
+    </select>
+</label>
    </div>
 </div>
 <div class="inblcdiv1 inblcdiv2">

@@ -99,10 +99,19 @@
 <div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
    <label for="tipoaep" id="labelrol">Tipo de rol
-    <select name="tipoaep" id="tipoaep" required>
-        <option value="1">Administrador</option>
-        <option value="2" selected>Docente</option>
-        <option value="3">Estudiante</option>
+   <select name="id" id="Id_Roles" class="tipoaep" required>
+	<?php
+$query =mysqli_connect("localhost", "root", "", "softwareducativo");
+ $sql = "select * from roles order by id";
+ $resultado = mysqli_query($query, $sql);
+ while ($mostrar = mysqli_fetch_array($resultado)){
+        $id = $mostrar['id'];
+		$estado = $mostrar['estado'];
+		?>
+	<option value="<?php echo $id; ?>"> <?php echo $estado." "?></option>
+	<?php
+	}
+	?>
     </select></label>
 </div>
 </div>
@@ -113,11 +122,10 @@
 <input type="password" name="clave" id="clave" placeholder="Contraseña." maxlength="15"; required></label>
 </div>
 </div>
-
-    <br><br>
-	<p class="text-center">
-		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
-												</p>
+<br><br>
+<p class="text-center">
+<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
+</p>
 </form>
 </div>
 </div>
