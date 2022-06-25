@@ -119,7 +119,7 @@ $query =mysqli_connect("localhost", "root", "", "softwareducativo");
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
 <label for="clave"id="labelclave">Ingrese Contraseña
-<input type="password" name="clave" id="clave" placeholder="Contraseña." maxlength="15"; required></label>
+<input type="password" name="Clave" id="Clave" placeholder="Contraseña." maxlength="15"; required></label>
 </div>
 </div>
 <br><br>
