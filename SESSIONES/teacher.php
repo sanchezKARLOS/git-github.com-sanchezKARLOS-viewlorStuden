@@ -79,27 +79,27 @@
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
 <label for="id" id="labelid">Codigo Id
-<input type="text" name="id" id="id" placeholder="Id." onblur="reviscodigo();" onkeypress="solonumero(event);"  maxlength="10" require></label>
+<input type="text" name="Id_Persona" id="id" placeholder="Id." maxlength="10"></label>
 </div>
 </div>
 
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
 <label for="nombre" id="labelnombre">Nombre
-<input type="text" name="nombre" id="nombre" placeholder="Ej: Andres." onfocus="vaciarplaceholder(this);" onkeypress="revisnombre(event);" pattern=".{3,15}" required ></label>
+<input type="text" name="P_Nombre" id="nombre" placeholder="Ej: Andres." pattern=".{3,20}" required ></label>
 </div>
 </div>
 
    <div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
     <label for="apellido" id="labelapellido">Apellido
-    <input type="text" name="apellido" id="apellido" placeholder="Ej: Carvajal." onfocus="vaciarplaceholder(this);" pattern=".{3,15}" required></label>
+    <input type="text" name="P_Apellido" id="apellido" placeholder="Ej: Carvajal." pattern=".{3,20}" required></label>
 </div>
 </div>
 <div class="inblcdiv1 inblcdiv2">
    <div class="regforblock">
    <label for="tipoaep" id="labelrol">Tipo de rol
-   <select name="id" id="Id_Roles" class="tipoaep" required>
+   <select name="Id_Roles" id="Id_Roles" class="tipoaep" required>
 	<?php
 $query =mysqli_connect("localhost", "root", "", "softwareducativo");
  $sql = "select * from roles order by id";

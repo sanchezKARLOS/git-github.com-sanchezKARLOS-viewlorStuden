@@ -81,28 +81,36 @@
     <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id
-    <input type="text" name="id" id="id" class="id"  placeholder="Id." maxlength="10" autocomplete="off" require></label>
+    <input type="text" name="Id_Persona" id="Id_Persona" class="id_Persona"  placeholder="Id." maxlength="10" autocomplete="off" require></label>
      </div>
     </div>
-
+	
 	<div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="nombre" id="labelnombre">Nombre
-    <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Ej: Juan." pattern=".{3,25}" autocomplete="off" ></label> 
+    <input type="text" name="P_Nombre" id="P_Nombre" class="P_Nombre" placeholder="Ej: Juan." pattern=".{3,25}" autocomplete="off" require></label> 
+	<div class="regforblock">
+    <label for="nombre" id="labelnombre">Segundo Nombre
+    <input type="text" name="S_Nombre" id="S_Nombre" class="S_Nombre"  pattern=".{3,25}" autocomplete="off" ></label> 
     </div>
+</div>
     </div>
 
+	
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
       <label for="apellido" id="labelapellido">Apellido
-    <input type="text" name="apellido" id="apellido" class="apellido"  placeholder="Ej: Quintero." pattern=".{3,25}" autocomplete="off"></label>
-   </div>
+    <input type="text" name="P_Apellido" id="P_Apellido" class="P_Apellido"  placeholder="Ej: Quintero." pattern=".{3,25}" autocomplete="off" require></label>
+   
+	<div class="regforblock">
+      <label for="apellido" id="labelapellido">Segundo Apellido
+    <input type="text" name="S_Apellido" id="S_Apellido" class="S_Apellido" pattern=".{3,25}" autocomplete="off" ></label>
+   </div></div>
 </div>
-
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
   <label for="tipoaep" id="labelrol">Tipo de rol
-    <select name="id" id="Id_Roles" class="tipoaep" required>
+    <select name="Id_Roles" id="Id_Roles" class="Id_Roles" required>
 	<?php
 $query =mysqli_connect("localhost", "root", "", "softwareducativo");
  $sql = "select * from roles order by id";
@@ -120,28 +128,33 @@ $query =mysqli_connect("localhost", "root", "", "softwareducativo");
    </div>
 </div>
 <div class="inblcdiv1 inblcdiv2">
-<div class="regforblock">  
-    <label for="grado" id="labelgrado">Grado
-    <input type="text" name="grado" id="Grado" class="grado" placeholder="Ej: Quinto."></label>
- </div>
-</div>
-<div class="inblcdiv1 inblcdiv2">
-<div class="regforblock">  
-    <label for="edad" id="labeledad">Edad
-    <input type="text" name="edad" id="edad" class="edad"  placeholder="Ej: 8."></label>
-</div>
-</div>
-   
-<div class="inblcdiv1 inblcdiv2">
 <div class="regforblock"> 
   <label for="cdteacher" id="labelcdteacher">Id Profesor
- <input type="text" name="cdteacher" id="cdteacher" class="cdteacher" placeholder="Ej: 1007582343." maxlength="10"></label>
+  <select name="Cd_Docente" id="Cd_Docente" class="Cd_Docente" require>
+	<?php
+$query =mysqli_connect("localhost", "root", "", "softwareducativo");
+ $sql = "select * from docentes";
+ $resultado = mysqli_query($query, $sql);
+ while ($mostrar = mysqli_fetch_array($resultado)){
+        $Id_Persona = $mostrar['Id_Persona'];
+		?>
+	<option value="<?php echo $Id_Persona; ?>"> <?php echo $Id_Persona." "?></option>
+	<?php
+	}
+	?>
+    </select></label>
  </div>
+</div>
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">
+      <label for="grado" id="labelgrado">Grado
+    <input type="text" name="Grado" id="Grado" class="Grado"  placeholder="Ej: 8." autocomplete="off" require></label>
+   </div>
 </div>
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock"> 
   <label for="clave"id="labelclave">Contraseña
-<input type="password" name="clave" id="clave" class="clave" placeholder="Contraseña."></label>
+<input type="password" name="Clave" id="Clave" class="Clave" placeholder="Contraseña." require></label>
 </div>
 </div>
     <br><br>
