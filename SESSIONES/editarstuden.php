@@ -1,217 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="css/frstuden.css">
-  <link rel="stylesheet" href="css/boarmain.css">
-  <title>Registrar estudiante</title>
+	<title>Estudiante</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/frstuden.css">
 </head>
-<header>
+<body>
+	<!-- SideBar -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--SideBar Title -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				Matematicas Basica
+			</div>
+			<!-- SideBar User info -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./img/user1.png" alt="UserIcon">
+				</figure>
+			</div>
+			<!-- SideBar Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.php">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
+					</a>
+				</li>
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i> Configuracion Estudio<i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="erro404.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>Datos de estudio</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
 
-</header>
-<div class="container">
-  <div class="navigation">
-    <ul>
-      <li>
-        <a href="#">
-          <span class="icon"><i class="fa-brands fa-apple"></i></span>
-          <span class="title">
-            <h2>Panel de control</h2>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="./main.php">
-          <span class="icon">
-              <i class="fa-solid fa-house">
-                <div>
-                    <img  class="web" src="img/carp.png" alt="">
-                </div>
-              </i>
-            </span>
-          <span class="title">Inicio</span>
-        </a>
-      </li>
-      <li>
-        <a href="./error_404.php">
-          <span class="icon"><i class="fa-solid fa-gear">
-          <div>
-            <img  class="web" src="img/carp.png" alt="">
-            </div>
-          </i>
-        </span>
-          <span class="title">Configuracion</span>
-          
-        </a>
-      </li>
-      <li class="menu-outngiss" id="menu-outngis">
-        <a href="#">
-          <span class="icon"><i class="fa-solid fa-right-from-bracket">
-          <div>
-                    <img  class="web" src="img/carp.png" alt="">
-                </div>
-          </i></span>
-          <span class="title">Salir</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!------comenzacion de main--------->
-  <div class="main">
-    <div class="topbar">  
-      <div class="toggle" onclick="toggleMenu();"></div>
-      <div class="search">
-      </div>
-      <div class="conf-user">
-       <div class="collapse navbar-user tercer-nav">
-       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span> Admin</a></li>
-      <!--  <li class="active"><a title="View Website" href="#"><span class="glyphicon glyphicon-globe"></span></a></li>-->
-      
-      </ul>
-      </div>
-      </div>
-      <div class="firt-img">
-      <div class="user">
-        <img src="img/user.png" alt="" class="imgen">
-      </div>
-      </div>
-    </div>
-    <div class="details">
-      <div class="recentOrders">
-        <div class="cardHeader">
-          <h2>registrado recientes</h2>
-          <a href="" class="btn">mostras mas</a>
-        </div>
-<div>
-<?php 
-    $id = $_GET['id'];
-    $nombre = $_GET['nombre'];
-    $apellido = $_GET['apellido'];
-    $tipoaep = $_GET['tipoaep'];
-    $grado = $_GET['grado'];
-    $edad = $_GET['edad'];
-    $cdteacher = $_GET['cdteacher'];
-    $clave = $_GET['clave'];
+	<!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled">
+			<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				<li>
+					<a href="#!" class="btn-exit-system">
+						<i class="zmdi zmdi-power"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Content page -->
+	
+			<!-- Content page -->
+			<div class="container-fluid">
+				<div class="page-header">
+				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Editar Estudiante </br> 
+					<!--<small>Editar Perfil</small></h1>-->
+				</div>
+			</div>
+			<!--from-->
+			<?php 
+    $Id_Persona = $_GET['Id_Persona'];
+    $P_Nombre = $_GET['P_Nombre'];
+    $S_Nombre = $_GET['S_Nombre'];
+    $P_Apellido= $_GET['P_Apellido'];
+    $S_Apellido = $_GET['S_Apellido'];
+    $Cd_Docente = $_GET['Cd_Docente'];
+    $Grado = $_GET['Grado'];
+    $Clave = $_GET['Clave'];
     ?>
-<div class="divprimero" style="max-width: 650px; min-width: 400px;">
-    <div class="divsegundo">
-    <form action="editardb.php" class="from" id="from" name="nafrom" method="post" >
-    <div class="session" id="session">
-<!----para la elaboracion de texto en input, value o placeholder-->
-   <tr><td>ingrese id </td>
-   <input type="text" name="id" id="id" class="id" value="<?=$id?>" onblur="reviscodigo();" maxlength="10" autocomplete="off" >
-   </tr>
-    <tr>
-    <td>nombre</td>
-    <input type="text" name="nombre" id="nombre" class="nombre" value="<?=$nombre?>" onfocus="vaciarplaceholder(this);" onkeypress="reviletras(event);" onfocus="verificar();"  >
-   </tr>
-    <tr><td>apellido</td>
-    <input type="text" name="apellido" id="apellido" class="apellido" value="<?=$apellido?>" onfocus="vaciarplaceholder(this);" onkeypress="reviletras(event);" >
-    </tr>
-    <tr><td>tipo de usuario</td>
-    <select name="tipoaep" id="tipoaep" value="<?=$tipoaep?>" style="visibility:hidden">
-        <option value="1">Administrador</option>
-        <option value="2" selected>Docente</option>
-        <option value="3">Estudiante</option>
-    </select>
-    </tr>
-    <tr><td>grado</td>
-    <input type="text" name="grado" id="grado" class="grado" value="<?=$grado?>" onfocus="vaciarplaceholder(this);" >
-    </tr>
-    <tr><td>edad</td>
-    <input type="text" name="edad" id="edad" class="edad" value="<?=$edad?>"  onblur="revisaredad();" >
-</tr>
-    <tr><td>codigo del profesor</td>
-    <input type="text" name="cdteacher" id="cdteacher" class="cdteacher" value="<?=$cdteacher?>" onfocus="vaciarplaceholder(this);" maxlength="10"  >
-    </tr>
-    <tr><td>contraseña</td>
-    <input type="password" name="clave" id="clave" class="clave" value="<?=$clave?>" onfocus="vaciarplaceholder(this);"  maxlength="10"; onfocus="verificar();">
-    </tr>
-<br>
-<br>
-        <div class="div-bnt ">
-    <div class="div-bnt2">
-    <tr><td><input type="submit" name="submit" id="submit" class="submit" value="Actualizar "></td></tr>
-    <div>
-        <a href="verlistadostuden.php">Cancelar</a>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div id="myTabContent" class="tab-content">
+<div class="tab-pane fade active in" id="new">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-md-10 col-md-offset-1">
+<form action="editardb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
+    <div class="inblcdiv1 inblcdiv2">
+    <div class="regforblock">
+    <label for="id" id="labelid" name="labelid">Codigo Id
+    <input type="text" name="Id_Persona" id="Id_Persona" class="id_Persona" value="<?=$Id_Persona?>" maxlength="10" autocomplete="off" require></label>
+     </div>
+    </div>
+	
+	<div class="inblcdiv1 inblcdiv2">
+    <div class="regforblock">
+    <label for="nombre" id="labelnombre">Nombre
+    <input type="text" name="P_Nombre" id="P_Nombre" class="P_Nombre" value="<?=$P_Nombre?>" pattern=".{3,25}" autocomplete="off" require></label> 
+	<div class="regforblock">
+    <label for="nombre" id="labelnombre">Segundo Nombre
+    <input type="text" name="S_Nombre" id="S_Nombre" class="S_Nombre"  pattern=".{3,25}"  value="<?=$S_Nombre?>" autocomplete="off" ></label> 
+    </div>
+</div>
     </div>
 
-    </div>
-    </div>
+	
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">
+      <label for="apellido" id="labelapellido">Apellido
+    <input type="text" name="P_Apellido" id="P_Apellido" class="P_Apellido" value="<?=$P_Apellido?>" Quintero." pattern=".{3,25}" autocomplete="off" require></label>
    
+	<div class="regforblock">
+      <label for="apellido" id="labelapellido">Segundo Apellido
+    <input type="text" name="S_Apellido" id="S_Apellido" class="S_Apellido" pattern=".{3,25}" value="<?=$S_Apellido?>" autocomplete="off" ></label>
+   </div></div>
 </div>
-</form>
-    </div>     
-    </div>
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock"> 
+  <label for="cdteacher" id="labelcdteacher">Id Profesor
+  <select name="Cd_Docente" id="Cd_Docente" class="Cd_Docente" require>
+	<?php
+$query =mysqli_connect("localhost", "root", "", "softwareducativo");
+ $sql = "select * from docentes";
+ $resultado = mysqli_query($query, $sql);
+ while ($mostrar = mysqli_fetch_array($resultado)){
+        $Id_Persona = $mostrar['Id_Persona'];
+		?>
+	<option value="<?php echo $Id_Persona; ?>"> <?php echo $Id_Persona." "?></option>
+	<?php
+	}
+	?>
+    </select></label>
+ </div>
 </div>
-        
-
-      </div>
-
-      <div class="recentCustomers">
-        <div class="cardHeader">
-          <h2>Recent Customers</h2>
-        </div>
-        <table>
-          <tbody>
-          <tr>
-              <td style="width: 60px">
-                <div class="imgBx"><img src="./img/user.png" alt=""></div>
-              </td>
-              <td>
-                <h4>Carlos<br><span>Estados Unidos</span></h4>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 60px">
-                <div class="imgBx"><img src="./img/user.png" alt=""></div>
-              </td>
-              <td>
-                <h4>henry<br><span>Colombia</span></h4>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 60px">
-                <div class="imgBx"><img src="./img/user.png" alt=""></div>
-              </td>
-              <td>
-                <h4>Andres<br><span>Colombia</span></h4>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 60px">
-                <div class="imgBx"><img src="./img/user.png" alt=""></div>
-              </td>
-              <td>
-                <h4>Jairo<br><span>Colombia</span></h4>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 60px">
-                <div class="imgBx"><img src="./img/user.png" alt=""></div>
-              </td>
-              <td>
-                <h4>Maria<br><span>España</span></h4>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 60px">
-                <div class="imgBx"><img src="./img/user.png" alt=""></div>
-              </td>
-              <td>
-                <h4>Elena<br><span>mexico</span></h4>
-              </td>
-            </tr>
-           
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">
+      <label for="grado" id="labelgrado">Grado
+    <input type="text" name="Grado" id="Grado" class="Grado"  value="<?=$Grado?>" autocomplete="off" require></label>
+   </div>
 </div>
-
-<script src="js/boar.js" ></script>
-
-<!--<script src="https://kit.fontawesome.com/572f592c32.js" crossorigin="anonymous"></script>-->
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock"> 
+  <label for="clave"id="labelclave">Contraseña
+<input type="password" name="Clave" id="Clave" class="Clave" value="<?=$Clave?>" require></label>
+</div>
+</div>
+    <br><br>
+	<p class="text-center">
+		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
+												</p>
+											</form>
+  
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--end from-->	
+	<!-- Notifications area -->	
+	<!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>

@@ -37,7 +37,7 @@
 							<a href="student.php"></i>Registrar Estudiante</a>
 						</li>
 						<li>
-							<a href="horario.html"></i> Listado Estudiante
+							<a href="liststuden.php"></i> Listado Estudiante
 						</a>
 						</li>
 						<li>
