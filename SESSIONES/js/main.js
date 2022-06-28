@@ -18,10 +18,15 @@ $(document).ready(function(){
 		  	showCancelButton: true,
 		  	confirmButtonColor: '#03A9F4',
 		  	cancelButtonColor: '#F44336',
-		  	confirmButtonText: '<i class="zmdi zmdi-run"></i>Si, Salir!',
-		  	cancelButtonText: '<i class="zmdi zmdi-close-circle"></i> No, Cancelar!'
+		  	confirmButtonText: 'Si, Salir!',
+		  	cancelButtonText: ' No, Cancelar!'
 		}).then(function () {
-			window.location.href="index.php";
+			if(confirmButtonText){
+				window.location.href="home.php";
+			}
+			else
+			{alert("erro");}
+			
 		});
 	});
 	$('.btn-menu-dashboard').on('click', function(){
@@ -45,7 +50,7 @@ $(document).ready(function(){
 	});
 	$('.btn-search').on('click', function(){
 		swal({
-		  title: 'What are you looking for?',
+		  title: 'Ingrese Nombre?',
 		  confirmButtonText: '<i class="zmdi zmdi-search"></i>  Search',
 		  confirmButtonColor: '#03A9F4',
 		  showCancelButton: true,

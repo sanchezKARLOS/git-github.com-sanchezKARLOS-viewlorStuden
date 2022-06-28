@@ -72,21 +72,21 @@ body, html{
 	color: #fff;
 	padding-bottom: 5%;
 	top: 50%;
-	height: 80%;
+	height: 90%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
 	max-width: 350px;
+	/* background: #c77373; */
 	padding: 12px;
-	box-shadow: 0 0 7px 0px rgba(78, 72, 95, 0.7);
+	box-shadow: 0 0 7px 0px rgb(56 84 94 / 70%);
 	border-radius: 0 0 1px 1px;
-	 background-color:
-	transparent; 
+	background-color:
+	transparent;
 }
 .logInForm p,
 .logInForm label{
 	color: #e9e8e8;
-	text-align: center;
 }
 /*============ Partes del dashboard*/
 .dashboard-sideBar,
@@ -619,7 +619,7 @@ body, html{
 div#prim1{
 	position:
 	relative;
-	background-color: #c2c2d1;
+	background-color: #cbdbe1;
 	width: 89%;
 	height: 90%;
 	margin: 0 auto;
@@ -629,13 +629,13 @@ div#prim1,
 	padding-top: 20px;
 }
 div#segun2{
-	background-color: transparent;
+	background-color: #cee0e9;
 	width: 70%;
 	height:96%;
 	margin: 0 auto;
 }
 div#prim1, #segun2, #terc3{
-	padding-top: 20px;
+	padding-top: 40px;
 }
 div#terc3{
 	border-radius: 12px;
@@ -643,6 +643,6 @@ div#terc3{
 	position: relative;
 	width: 60%;
 	max-width: 400px;
-	height: 90%;
-	background-color: #003147 ;
+	height: 100%;
+	background-color: #003147;
 }

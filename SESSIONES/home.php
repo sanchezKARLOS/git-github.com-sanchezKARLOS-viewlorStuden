@@ -56,7 +56,7 @@
 							<a href="teacher.php">Registrar Docente</a>
 						</li>
 						<li>
-							<a href="horario.html"> Listado Docente
+							<a href="listteacher.php"> Listado Docente
 						</a>
 						</li>
 						<li>

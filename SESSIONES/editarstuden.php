@@ -63,12 +63,21 @@
 			<!-- Content page -->
 			<div class="container-fluid">
 				<div class="page-header">
-				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Editar Estudiante </br> 
+				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>actualizar Informacion </br> 
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
 			<!--from-->
-			<?php 
+	
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div id="myTabContent" class="tab-content">
+<div class="tab-pane fade active in" id="new">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-md-10 col-md-offset-1">
+<?php 
     $Id_Persona = $_GET['Id_Persona'];
     $P_Nombre = $_GET['P_Nombre'];
     $S_Nombre = $_GET['S_Nombre'];
@@ -78,19 +87,11 @@
     $Grado = $_GET['Grado'];
     $Clave = $_GET['Clave'];
     ?>
-<div class="container-fluid">
-<div class="row">
-<div class="col-xs-12">
-<div id="myTabContent" class="tab-content">
-<div class="tab-pane fade active in" id="new">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xs-12 col-md-10 col-md-offset-1">
 <form action="editardb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
     <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id
-    <input type="text" name="Id_Persona" id="Id_Persona" class="id_Persona" value="<?=$Id_Persona?>" maxlength="10" autocomplete="off" require></label>
+    <input type="text" name="Id_Persona" id="Id_Persona" class="id_Persona" value="<?=$Id_Persona?>" maxlength="10" autocomplete="off" disabled></label>
      </div>
     </div>
 	
@@ -121,10 +122,9 @@
   <label for="cdteacher" id="labelcdteacher">Id Profesor
   <select name="Cd_Docente" id="Cd_Docente" class="Cd_Docente" require>
 	<?php
-$query =mysqli_connect("localhost", "root", "", "softwareducativo");
- $sql = "select * from docentes";
- $resultado = mysqli_query($query, $sql);
- while ($mostrar = mysqli_fetch_array($resultado)){
+require "basedatos.php";
+ $sql = $mysqli->query("select * from docentes");
+ while ($mostrar = mysqli_fetch_array($sql)){
         $Id_Persona = $mostrar['Id_Persona'];
 		?>
 	<option value="<?php echo $Id_Persona; ?>"> <?php echo $Id_Persona." "?></option>
@@ -148,7 +148,7 @@ $query =mysqli_connect("localhost", "root", "", "softwareducativo");
 </div>
     <br><br>
 	<p class="text-center">
-		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
+		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i>actualizar</button>
 												</p>
 											</form>
   

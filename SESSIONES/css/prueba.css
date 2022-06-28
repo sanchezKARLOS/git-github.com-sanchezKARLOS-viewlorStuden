@@ -3232,10 +3232,10 @@ html[dir="rtl"] .rel-btn .btn + .btn {
   color: #626469;
 }
 .ci-tile.status-in-progress {
-  border: 1px solid #017cad;
+  border: 1px solid #003147;
 }
 .ci-tile.status-in-progress .ci-header {
-  background-color: #0a5b7a;
+  background-color: #003147;
 }
 .ci-tile.status-in-progress .ci-header .dot {
   background-color: #6ebe4a;
@@ -3525,14 +3525,14 @@ html[dir="rtl"] .ci-tile .ci-footer .dates {
   padding-top: 10px;
   padding-left: 7px;
   padding-right: 7px;
-  border: 1px solid #005073;
+  border: 1px solid #003147;
   background-color: white;
-  color: #005073;
+  color: #003147;
   top: -2px;
 }
 #teaching-content #instructor-heading .additional-filters span.active-view,
 #teaching-content #instructor-heading .additional-filters a.active-view {
-  background-color: #005073;
+  background-color: #003147;
   color: white;
 }
 #teaching-content #instructor-heading .additional-filters span.icon-folder,

@@ -1,3 +1,9 @@
+<?php
+session_start();
+$P_Nombre=$_SESSION['P_Nombre'];
+
+?>
+	
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,12 +18,10 @@
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
-			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">Matematicas Basica</div>
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title"><small>Bienvenido<?php echo $P_Nombre; ?></small></div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
-				<figure class="full-box">
-					<img src="./img/user1.png" alt="UserIcon">
-				
+				<figure class="full-box"><img src="./img/user1.png" alt="UserIcon">
 				</figure>
 			
 			</div>
@@ -104,7 +108,10 @@
 			  <h1 class="text-titles">Panel de control <small>Estudiante</small></h1>
 			</div>
 		</div>
-		<div class="full-box text-center" style="padding: 30px 10px;">			
+		<div class="full-box text-center" style="padding: 30px 10px;">	
+		<div style="margin: 0 rigth;">
+		<?php require "prueba.php";?>
+		</div>
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					Finalizacion del Curso
@@ -117,7 +124,6 @@
 					<small>Completado</small>
 				</div>
 			</article>	
-		</div>
 		</div>
 	</section>
 

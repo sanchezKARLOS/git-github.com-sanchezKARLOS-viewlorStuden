@@ -63,7 +63,7 @@
 			<!-- Content page -->
 			<div class="container-fluid">
 				<div class="page-header">
-				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Editar Estudiante </br> 
+				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Estudiantes Matriculados</br> 
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
@@ -102,7 +102,7 @@
 include "basedatos.php";
 $sql =$mysqli->query("SELECT * FROM personas persona
 INNER JOIN estudiante estudiante ON persona.Id_Persona = estudiante.Id_IdPersona");
-while ($mostrar = $sql->fetch_array()){
+while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 
 ?>
 <tr>
@@ -134,6 +134,7 @@ while ($mostrar = $sql->fetch_array()){
 <?php
 }
 ?>
+</table>
 										</div>
 									</div>
 								</div>

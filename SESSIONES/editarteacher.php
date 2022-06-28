@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Estudiante</title>
+	<title>Docente</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -63,11 +63,12 @@
 			<!-- Content page -->
 			<div class="container-fluid">
 				<div class="page-header">
-				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Docente Matriculados</br> 
+				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>actualizar Informacion </br> 
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
 			<!--from-->
+	
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12">
@@ -76,60 +77,56 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12 col-md-10 col-md-offset-1">
-<form action="buscardb.php" method="post">
-    <input type="text" name="buscar" class="buscar" id="buscar">
-    <input type="submit" value="buscar">
-    <a href="./student.php">nuevo</a>
-    </form>
+<?php 
+    $Id_Persona = $_GET['Id_Persona'];
+    $P_Nombre = $_GET['P_Nombre'];
+    $S_Nombre = $_GET['S_Nombre'];
+    $P_Apellido= $_GET['P_Apellido'];
+    $S_Apellido = $_GET['S_Apellido'];
+    $Clave = $_GET['Clave'];
+    ?>
+<form action="editardb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
+    <div class="inblcdiv1 inblcdiv2">
+    <div class="regforblock">
+    <label for="id" id="labelid" name="labelid">Codigo Id
+    <input type="text" name="Id_Persona" id="Id_Persona" class="id_Persona" value="<?=$Id_Persona?>" maxlength="10" autocomplete="off" disabled></label>
+     </div>
+    </div>
+	
+	<div class="inblcdiv1 inblcdiv2">
+    <div class="regforblock">
+    <label for="nombre" id="labelnombre">Nombre
+    <input type="text" name="P_Nombre" id="P_Nombre" class="P_Nombre" value="<?=$P_Nombre?>" pattern=".{3,25}" autocomplete="off" require></label> 
+	<div class="regforblock">
+    <label for="nombre" id="labelnombre">Segundo Nombre
+    <input type="text" name="S_Nombre" id="S_Nombre" class="S_Nombre"  pattern=".{3,25}"  value="<?=$S_Nombre?>" autocomplete="off" ></label> 
+    </div>
+</div>
+    </div>
+
+	
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock">
+      <label for="apellido" id="labelapellido">Apellido
+    <input type="text" name="P_Apellido" id="P_Apellido" class="P_Apellido" value="<?=$P_Apellido?>" Quintero." pattern=".{3,25}" autocomplete="off" require></label>
+   
+	<div class="regforblock">
+      <label for="apellido" id="labelapellido">Segundo Apellido
+    <input type="text" name="S_Apellido" id="S_Apellido" class="S_Apellido" pattern=".{3,25}" value="<?=$S_Apellido?>" autocomplete="off" ></label>
+   </div></div>
+</div>
+<div class="inblcdiv1 inblcdiv2">
+<div class="regforblock"> 
+  <label for="clave"id="labelclave">Contraseña
+<input type="password" name="Clave" id="Clave" class="Clave" value="<?=$Clave?>" require></label>
 </div>
 </div>
-
-<div>
-<div>
-    <table border="1px">
-    <tr>
-            <td>Codigo Id </td>
-            <td>Nombre</td>
-			      <td>Segundo Nombre </td>
-		      	<td>Apellido </td>
-            <td>Segundo Apellido </td>
-            <td>Clave </td>
-            <td>OPCIONES</td>
-        </tr>
-<?php
-include "basedatos.php";
-$sql =$mysqli->query("SELECT * FROM personas persona
-INNER JOIN docentes docente ON persona.Id_Persona = docente.Id_Persona");
-while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
-
-?>
-<tr>
-<td><?php echo $mostrar['Id_Persona']?></td>
-<td><?php echo $mostrar['P_Nombre']?></td>
-<td><?php echo $mostrar['S_Nombre']?></td>
-<td><?php echo $mostrar['P_Apellido']?></td>
-<td><?php echo $mostrar['S_Apellido']?></td>
-<td><?php echo $mostrar['Clave']?></td>
-<td> 
-<a href="editarteacher.php?
-    Id_Persona=<?php echo $mostrar['Id_Persona']?> &
-	P_Nombre=<?php echo $mostrar['P_Nombre']?> &
-    S_Nombre=<?php echo $mostrar['S_Nombre']?> &
-	P_Apellido=<?php echo $mostrar['P_Apellido']?> &
-    S_Apellido=<?php echo $mostrar['S_Apellido']?> &
-	Clave=<?php echo $mostrar['Clave']?>
-    ">editar</a>
-
-
-    <a href="./mainteacher.php"?
-    id=<?php echo $mostrar['0']?>
-    ">eliminar</a>
-</td>
-</tr>
-<?php
-}
-?>
-</table>
+    <br><br>
+	<p class="text-center">
+		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i>actualizar</button>
+												</p>
+											</form>
+  
 										</div>
 									</div>
 								</div>
