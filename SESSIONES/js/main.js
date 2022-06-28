@@ -22,10 +22,11 @@ $(document).ready(function(){
 		  	cancelButtonText: ' No, Cancelar!'
 		}).then(function () {
 			if(confirmButtonText){
-				window.location.href="home.php";
+				window.location.href="index.php";
+				
 			}
 			else
-			{alert("erro");}
+			{alert("error");}
 			
 		});
 	});

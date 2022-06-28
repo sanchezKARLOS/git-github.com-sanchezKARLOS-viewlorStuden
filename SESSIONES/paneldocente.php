@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['Id_Persona'])){
+    header("location: index.php");
+}
+$P_Nombre =$_SESSION['P_Nombre'];
+$Id_Roles =$_SESSION['Id_Roles'];
+if($Id_Roles == 2){
+?>
+	
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -90,7 +101,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#!" class="btn-exit-system">
+					<a href="logutup.php" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>
 					</a>
 				</li>
@@ -140,3 +151,6 @@
 
 </body>
 </html>
+<?php
+}
+?>

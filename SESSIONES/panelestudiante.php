@@ -1,7 +1,12 @@
 <?php
 session_start();
-$P_Nombre=$_SESSION['P_Nombre'];
 
+if(!isset($_SESSION['Id_Persona'])){
+    header("location: index.php");
+}
+$P_Nombre =$_SESSION['P_Nombre'];
+$Id_Roles =$_SESSION['Id_Roles'];
+if($Id_Roles == 3){
 ?>
 	
 <!DOCTYPE html>
@@ -96,7 +101,7 @@ $P_Nombre=$_SESSION['P_Nombre'];
 					</a>
 				</li>
 				<li>
-					<a href="#!" class="btn-exit-system">
+					<a href="logutup.php" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>
 					</a>
 				</li>
@@ -163,3 +168,6 @@ $P_Nombre=$_SESSION['P_Nombre'];
 
 </body>
 </html>
+<?php
+}
+?>

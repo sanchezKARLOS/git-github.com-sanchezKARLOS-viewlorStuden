@@ -1,4 +1,3 @@
-
 <?php
 include "basedatos.php";
 session_start();
@@ -6,7 +5,6 @@ session_start();
 if($_POST){
 $Id_Persona=$_POST['Id_Persona'];
 $Clave=$_POST['Clave'];
-
 
 $consulta ="SELECT * FROM personas WHERE  Id_Persona='$Id_Persona' and Clave='$Clave'";
 $resultado = mysqli_query($mysqli,$consulta);
