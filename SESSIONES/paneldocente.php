@@ -1,12 +1,14 @@
 <?php
 session_start();
-
-if(!isset($_SESSION['Id_Persona'])){
-    header("location: index.php");
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
 }
-$P_Nombre =$_SESSION['P_Nombre'];
-$Id_Roles =$_SESSION['Id_Roles'];
-if($Id_Roles == 2){
+else{
+	if($_SESSION['Id_Roles'] !=2){
+		header("location: index.php");
+	}
+}
 ?>
 	
 <!DOCTYPE html>
@@ -151,6 +153,3 @@ if($Id_Roles == 2){
 
 </body>
 </html>
-<?php
-}
-?>

@@ -1,12 +1,14 @@
 <?php
 session_start();
-
-if(!isset($_SESSION['Id_Persona'])){
-    header("location: index.php");
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
 }
-$P_Nombre =$_SESSION['P_Nombre'];
-$Id_Roles =$_SESSION['Id_Roles'];
-if($Id_Roles == 3){
+else{
+	if($_SESSION['Id_Roles'] !=3){
+		header("location: index.php");
+	}
+}
 ?>
 	
 <!DOCTYPE html>
@@ -18,7 +20,6 @@ if($Id_Roles == 3){
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-	<!-- SideBar -->
 	<section class="full-box cover dashboard-sideBar">
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
@@ -166,8 +167,6 @@ if($Id_Roles == 3){
 		$.material.init();
 	</script>
 
+
 </body>
 </html>
-<?php
-}
-?>
