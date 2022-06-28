@@ -2985,12 +2985,12 @@ html[dir="rtl"] .rel-btn .btn + .btn {
   background: #f5f5f5;
 }
 .ci-tile {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #b1b1b1;
   border-radius: 5px;
-  height: 350px;
+  height: 380px;
   margin-bottom: 20px;
   position: relative;
-  width: 60%;
+  width: 100%;
 }
 .ci-tile .ci-header {
   height: 20%;
@@ -3232,7 +3232,9 @@ html[dir="rtl"] .rel-btn .btn + .btn {
   color: #626469;
 }
 .ci-tile.status-in-progress {
-  border: 1px solid #003147;
+  box-shadow: red;
+  border: 2px solid #003147;
+  box-sizing: content-box;
 }
 .ci-tile.status-in-progress .ci-header {
   background-color: #003147;
