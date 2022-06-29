@@ -16,22 +16,22 @@
       <div class="col-md-6 col-lg-4">
         <div class="ci-tile status-in-progress">
           <div class="ci-header">
-            <span class="field-content"><span class="flag-wrapper flag-favorite-courses flag-favorite-courses-2102179">
+      
             <a href="" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
        </svg></a><span class="flag-throbber">&nbsp;</span>
           </span>
-      </span>            <span class="dot"></span>
+      </span><span class="dot"></span>
             <div class="course-status" tabindex="2054" aria-label="Estado En curso">En curso</div>
       
           </div>
           <div class="ci-content clearfix">
             <div class="course-description">
-              <div class="course-id" tabindex="2050" title="202202">202202</div>
-              <div class="cls-ins-title" tabindex="2051" title="Switching, Routing, and Wireless Essentials">Switching, Routing, and Wireless Essentials</div>
+              <div class="course-id" tabindex="2050" title="202202">2022</div>
+              <div class="cls-ins-title" tabindex="2051" title="Switching, Routing, and Wireless Essentials">Matematicas basicas</div>
               <div class="cls-ins-name" tabindex="2054" title="Universidad Popular del Cesar Seccional Aguachica">Universidad Popular del Cesar Seccional Aguachica</div>
             </div>
                     <div class="course-launcher">
-                <a href="#" tabindex="2053"><i class="icon-right-arrow icon-small" aria-hidden="true"></i><br>Iniciar curso</a></div>
+                <a href="quizejer.php" tabindex="2053"><i class="icon-right-arrow icon-small" aria-hidden="true"></i><br>Iniciar </a></div>
                 </div>
           <div class="ci-footer clearfix">
             <div class="iconholder">
@@ -47,17 +47,17 @@
                   </div>
                   <div class="gauge__inset">
                     <div class="gauge__percentage" tabindex="2055" aria-label="Semana 16 de 22">
-                      <div>Semana</div>
-                      <div><span>16</span> <span>de</span> <span>22</span></div>
+                      <div>Primera Semana</div>
+                      
                     </div>
                   </div>
                 </div>
                     </div>
                       <div class="foot-right">
             
-                    <div class="dates" aria-label="01 Mar - 31 Jul 2022" tabindex="2055">01 Mar - 31 Jul 2022</div>
-                  <div class="acad-title" aria-label="CCNAv7: Switching, Routing, and Wireless Essentials" tabindex="2056">CCNAv7: Switching, Routing, and Wireless Essentials</div>
-                                            <div class="end-date-text" tabindex="2057" aria-label="Please&nbsp;finish by 31 Jul 2022">Please&nbsp;finish by 31 Jul 2022 </div>
+                    <div class="dates" aria-label="01 Mar - 31 Jul 2022" tabindex="2055">25 junio - 31 Jul 2022</div>
+                  <div class="acad-title" aria-label="CCNAv7: Switching, Routing, and Wireless Essentials" tabindex="2056">Curso de Suma</div>
+                                            <div class="end-date-text" tabindex="2057" aria-label="Please&nbsp;finish by 31 Jul 2022">Finalizar 31 Jul 2022 </div>
                             </div>
       
       

@@ -20,13 +20,12 @@
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
 					<img src="./img/user1.png" alt="UserIcon">
-					<figcaption class="text-center text-titles">Sebastian Cardenas</figcaption>
-				</figure>
+					</figure>
 			</div>
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.php">
+					<a href="panelestudiante.php">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
 				</li>

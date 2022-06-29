@@ -2991,16 +2991,17 @@ html[dir="rtl"] .rel-btn .btn + .btn {
   margin-bottom: 20px;
   position: relative;
   width: 100%;
+  background-color: white;
 }
 .ci-tile .ci-header {
   height: 20%;
-  background-color: #dfdfdf;
+  background-color: #c73b3b;
   color: #fff;
   padding: 7px 10px;
   border-radius: 5px 5px 0px 0px;
   margin: -1px -1px 0px;
   text-align: right;
-  width: 60%;
+  width: 100;
 }
 .ci-tile .ci-header .dot {
   width: 7px;

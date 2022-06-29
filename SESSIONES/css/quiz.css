@@ -1,0 +1,20 @@
+html body{
+  background-color: #ecf1f1;
+  color: #09364b; 
+}
+
+.box{
+  /* Position relative means the element is positioned relative to its normal position, which would be the very top left corner as it is the first div in the body. */
+  /* When the position is set to relative, using display: block; and margin:auto; will automatically center the box horizontally. */
+  position: relative;
+  margin: auto;
+  display: block;
+  /*optional background or border*/
+  border: solid 4px #003147;
+  border-radius: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 650px;
+  height: 320px;
+  background: #c7c7c7;
+}

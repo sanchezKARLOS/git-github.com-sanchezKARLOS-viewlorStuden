@@ -46,12 +46,12 @@ else{
 						<li>
 							<a href="matmateria.html"></i>Ver Notas</a>
 						</li>
-						<li>
+						<!---<li>
 							<a href="horario.html"></i>Notas Pendiente</a>
-						</li>
+						</li>--->
 					</ul>
 				</li>
-				<li>
+				<!--<li>
 				<a href="#!" class="btn-sideBar-SubMenu">
 					</i>Examen<i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
@@ -63,7 +63,7 @@ else{
 							<a href="horario.html"></i>Examen Pendiente</a>
 						</li>
 					</ul>
-				</li>
+				</li>-->
 				<li>
 					<a href="horario.php" class="btn-sideBar-SubMenu">Ver Horario</a>
 				</li>
@@ -116,7 +116,7 @@ else{
 		</div>
 		<div class="full-box text-center" style="padding: 30px 10px;">	
 		<div style="margin: 0 rigth;">
-		<?php require "prueba.php";?>
+		<?php require "cajainicioquiz.php";?>
 		</div>
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
