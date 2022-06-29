@@ -14,7 +14,7 @@ else{
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Hoja de vida</title>
+	<title>Estudiante</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -42,7 +42,7 @@ else{
 		</div>
 	</section>
 
-	<!-- Content page-->
+	<!-- CONTENERDOR DE LAS PAGINAS-->
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">
@@ -63,15 +63,29 @@ else{
 				</li>
 			</ul>
 		</nav>
-		<!-- Content page -->
-		<div class="container-fluid">
+
+    <div class="container-fluid">
 			<div class="page-header">
 			  <h1 class="text-titles">Hoja de vida <small>Estudiante</small></h1>
 			</div>
 		</div>
-                <?php
-   include "Hojadevida.php";
-                ?>
+
+		<!-- Content page -->
+    <head>
+    <meta charset="utf-8">
+          <title>Mi Hoja de vida</title>
+  </head>
+  
+    <div class="contenedor">
+      
+      <header class="clearfix">
+        
+        <?php
+		include "Hojadevida.php";
+?>
+
+   
+  
 	</section>
 
 
