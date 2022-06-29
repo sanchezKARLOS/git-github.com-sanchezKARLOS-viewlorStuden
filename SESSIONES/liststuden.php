@@ -86,18 +86,19 @@
 
 <div>
 <div>
-    <table border="1px">
-        <tr >
-            <td>Codigo Id </td>
-            <td>Nombre</td>
-			<td>Segundo Nombre </td>
-			<td>Apellido </td>
-            <td>Segundo Apellido </td>
-			<td>Codigo Docente </td>
-            <td>Grado</td>
-            <td>Clave </td>
-            <td>OPCIONES</td>
+    <table class="table">
+	<thead>
+        <tr>
+            <td scope="col">Codigo Id </td>
+            <td scope="col">Nombre</td>
+			<td scope="col">Segundo Nombre </td>
+			<td scope="col">Apellido </td>
+            <td scope="col">Segundo Apellido </td>
+			<td scope="col">Codigo Docente </td>
+            <td scope="col">Grado</td>
+            <td scope="col">OPCIONES</td>
         </tr>
+</thead>
 <?php
 include "basedatos.php";
 $sql =$mysqli->query("SELECT * FROM personas persona
@@ -105,6 +106,7 @@ INNER JOIN estudiante estudiante ON persona.Id_Persona = estudiante.Id_IdPersona
 while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 
 ?>
+<tbody>
 <tr>
 <td><?php echo $mostrar['Id_Persona']?></td>
 <td><?php echo $mostrar['P_Nombre']?></td>
@@ -113,7 +115,6 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 <td><?php echo $mostrar['S_Apellido']?></td>
 <td><?php echo $mostrar['Cd_Docente']?></td>
 <td><?php echo $mostrar['Grado']?></td>
-<td><?php echo $mostrar['Clave']?></td>
 <td> 
     <a href="editarstuden.php?
     Id_Persona=<?php echo $mostrar['Id_Persona']?> &
@@ -123,14 +124,10 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
     S_Apellido=<?php echo $mostrar['S_Apellido']?> &
     Cd_Docente=<?php echo $mostrar['Cd_Docente']?>  &
 	Grado=<?php echo $mostrar['Grado']?> &
-	Clave=<?php echo $mostrar['Clave']?>
     ">editar</a>
-
-    <a href="eliminardb.php?
-    Id_Persona=<?php echo $mostrar['0']?>
-    ">eliminar</a>
 </td>
 </tr>
+
 <?php
 }
 ?>

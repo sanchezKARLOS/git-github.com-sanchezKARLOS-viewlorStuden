@@ -47,13 +47,10 @@ else{
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="matmateria.html"></i>Ver Estudiante Matriculados</a>
+							<a href="DocenteListStuden.php"></i>Ver Estudiante Matriculados</a>
 						</li>
 						<li>
-							<a href="horario.html"></i>Notas de Estudiantes</a>
-						</li>
-						<li>
-							<a href="horario.html"></i>Ver Horario de Estudiantes</a>
+							<a href="DocenteNotaEstudiante.php"></i>Notas de Estudiantes</a>
 						</li>
 					</ul>
 				</li>

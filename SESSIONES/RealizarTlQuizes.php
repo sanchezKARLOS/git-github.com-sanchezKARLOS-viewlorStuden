@@ -39,6 +39,31 @@ else{
 					</a>
 				</li>
 				<li>
+					<a href="RealizarQuiz.php">
+						</i>quiz1
+					</a>
+				</li>
+				<li>
+					<a href="Realizarquiz2.php">
+						</i>quiz2
+					</a>
+				</li>
+				<li>
+					<a href="Realizarquiz3.php">
+						</i>quiz3
+					</a>
+				</li>
+				<li>
+					<a href="Realizarquiz4.php">
+						</i>quiz4
+					</a>
+				</li>
+				<li>
+					<a href="Realizarquiz5.php">
+						</i>quiz5
+					</a>
+				</li>
+				<li>
 					<a href="panelestudiante.php">
 						</i>Volver a Repetir
 					</a>
@@ -68,11 +93,8 @@ else{
 			  <h1 class="text-titles">Realizar <small>Test Quiz</small></h1>
 			</div>
 		</div>
-		<div>
-			<?php
-			include "quiz2.php";
-			?>
-		</div>
+		<!--<div>
+		</div>-->
 	</section>
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>

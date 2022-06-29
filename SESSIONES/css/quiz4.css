@@ -1,0 +1,137 @@
+.questionForm {
+    display: none
+}
+
+.result {
+    display: none
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url(https://i2.wp.com/cccnews.info/wp-content/uploads/2018/05/math.jpg?resize=590%2C379&ssl=1)
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+    background-color: rgba(169, 255, 255, .9)
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    font-family: "Indie Flower", cursive;
+}
+
+.startQuiz {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.startButton {
+    width: 100%;
+    height: 150px;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: #BCFF78;
+    transition: all .2s    
+}
+
+.startButton:hover, .startButton:focus {
+    background-color: #C6AFFF;
+    font-size: 36px
+}
+
+header p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.questionForm {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.questionForm p {
+    font-size: 36px
+}
+
+fieldset {
+    background-color: #9EE;
+    padding-top: 10px;
+    border: #C6AFFF 3px groove;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(102, 95, 61)
+}
+
+fieldset span {
+    font-size: 24px;
+    font-family: "Indie Flower", cursive;
+}
+
+label {
+    margin: 5px
+}
+
+.submitButton {
+    width: 50%;
+    margin-top: 10px;
+    display: block;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto Mono", monospace;
+    font-size: 24px;
+}
+
+.result p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.nextQuestion {
+    width: 150px;
+    display: block;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+}
+
+.restart {
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    color: grey;
+    font-size: 10px;
+}

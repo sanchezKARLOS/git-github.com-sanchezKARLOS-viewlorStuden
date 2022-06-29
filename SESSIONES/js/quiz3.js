@@ -8,11 +8,18 @@ window.onload = function () {
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
       allQuestions = {
-        'What is Canada\'s national animal?' : ['Beaver', 'Duck', 'Horse', 0],
+        'Cual es el resultado de sumar 4 + 12 ?' : ['16', '17', '13', 0],
         
-        'What is converted into alcohol during brewing?' : ['Grain', 'Sugar' , 'Water', 1],
+        'Hay 5 niños en una fiesta y se reparten entre ellos 20 caramelos, a cada uno le toco 6 caramelos?' 
+        : ['Falso', 'Verdadero' , 'Ninguna de las anteriores', 1],
         
-        'In what year was Prince Andrew born? ' : ['1955', '1960', '1970', 1]
+        'Indique el signo de Suma? ' : ['x', '+', '/', 1],
+
+        'Indique el signo de Suma? ' : ['x', '+', '/', 1],
+
+        'Indique el signo de Suma? ' : ['x', '+', '/', 1]
+
+
       };
       
   function loadQuestion(curr) {

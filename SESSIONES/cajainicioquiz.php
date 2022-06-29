@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/prueba.css">
-  <title>prueba</title>
+  <title>Curso</title>
 </head>
 <body>
  <div>
@@ -31,7 +31,7 @@
               <div class="cls-ins-name" tabindex="2054" title="Universidad Popular del Cesar Seccional Aguachica">Universidad Popular del Cesar Seccional Aguachica</div>
             </div>
                     <div class="course-launcher">
-                <a href="quizejer.php" tabindex="2053"><i class="icon-right-arrow icon-small" aria-hidden="true"></i><br>Iniciar </a></div>
+                <a href="RealizarTlQuizes.php" tabindex="2053"><i class="icon-right-arrow icon-small" aria-hidden="true"></i><br>Iniciar </a></div>
                 </div>
           <div class="ci-footer clearfix">
             <div class="iconholder">

@@ -18,7 +18,8 @@ if(isset($_POST['Id_Persona']) &&  isset ($_POST['Clave'])){
     if($row == true){
         $Id_Roles = $row['Id_Roles'];
         $_SESSION['Id_Roles'] = $Id_Roles;
-    switch($_SESSION['Id_Roles']){
+    switch($_SESSION['Id_Roles'])
+    {
         case 1:  header("location: home.php");
         break;
         case 2:  header("location: paneldocente.php");
@@ -29,6 +30,7 @@ if(isset($_POST['Id_Persona']) &&  isset ($_POST['Clave'])){
     }
     }
     else{
+        
         echo ("Error, Id y contraseña incorrectos");
     }
     if($Clavebased == $Clave_C){
@@ -50,9 +52,7 @@ if(isset($_POST['Id_Persona']) &&  isset ($_POST['Clave'])){
     }
 }
 
-else{
-    echo ("campos vacios");
-}
+else{echo ("campos vacios");}
 
 mysqli_free_result($resultado);
 mysqli_close($mysqli);

@@ -25,7 +25,7 @@
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.php">
+					<a href="paneldocente.php">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
 				</li>
@@ -63,7 +63,7 @@
 			<!-- Content page -->
 			<div class="container-fluid">
 				<div class="page-header">
-				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Docente Matriculados</br> 
+				  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i>Estudiantes Matriculados</br> 
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
@@ -76,61 +76,38 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12 col-md-10 col-md-offset-1">
-<form action="buscardb.php" method="post">
-    <input type="text" name="buscar" class="buscar" id="buscar">
-    <input type="submit" value="buscar">
-    <a href="./student.php">nuevo</a>
-    </form>
 </div>
 </div>
-<div>
-<div>
-    <table border="1px" class="table">
-    <tr>
-            <td scope="col">Codigo Id </td>
-            <td scope="col">Nombre</td>
-			      <td scope="col">Segundo Nombre </td>
-		      	<td scope="col">Apellido </td>
-            <td scope="col">Segundo Apellido </td>
-            <td scope="col">Clave </td>
-            <td scope="col">OPCIONES</td>
+    <table class="table">
+	<thead>
+        <tr>
+            <th scope="col">Codigo Id </th>
+            <th scope="col">Nombre</th>
+			<th scope="col">Segundo Nombre </th>
+			<th scope="col">Apellido </th>
+            <th scope="col">Segundo Apellido </th>
         </tr>
+		</thead>
 <?php
 include "basedatos.php";
 $sql =$mysqli->query("SELECT * FROM personas persona
-INNER JOIN docentes docente ON persona.Id_Persona = docente.Id_Persona");
+INNER JOIN estudiante estudiante ON persona.Id_Persona = estudiante.Id_IdPersona");
 while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 
 ?>
+<tbody>
 <tr>
-<td><?php echo $mostrar['Id_Persona']?></td>
+<th scope="col" ><?php echo $mostrar['Id_Persona']?></th>
 <td><?php echo $mostrar['P_Nombre']?></td>
 <td><?php echo $mostrar['S_Nombre']?></td>
 <td><?php echo $mostrar['P_Apellido']?></td>
 <td><?php echo $mostrar['S_Apellido']?></td>
-<td><?php echo $mostrar['Clave']?></td>
-<td> 
-<a href="editarteacher.php?
-    Id_Persona=<?php echo $mostrar['Id_Persona']?> &
-	P_Nombre=<?php echo $mostrar['P_Nombre']?> &
-    S_Nombre=<?php echo $mostrar['S_Nombre']?> &
-	P_Apellido=<?php echo $mostrar['P_Apellido']?> &
-    S_Apellido=<?php echo $mostrar['S_Apellido']?> &
-	Clave=<?php echo $mostrar['Clave']?>
-    ">editar</a>
-
-
-    <a href="./mainteacher.php"?
-    id=<?php echo $mostrar['0']?>
-    ">eliminar</a>
-</td>
 </tr>
 <?php
 }
 ?>
+<tbody>
 </table>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
