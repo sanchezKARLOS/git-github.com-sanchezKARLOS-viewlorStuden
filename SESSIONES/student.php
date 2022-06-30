@@ -118,7 +118,8 @@ else{
 	<div class="regforblock">
       <label for="apellido" id="labelapellido">Segundo Apellido
     <input type="text" name="S_Apellido" id="S_Apellido" class="S_Apellido" pattern=".{3,25}" autocomplete="off" ></label>
-   </div></div>
+   </div>
+</div>
 </div>
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">

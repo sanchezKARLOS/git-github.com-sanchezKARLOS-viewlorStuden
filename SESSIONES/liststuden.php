@@ -76,10 +76,15 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12 col-md-10 col-md-offset-1">
-<form action="buscardb.php" method="post">
-    <input type="text" name="buscar" class="buscar" id="buscar">
-    <input type="submit" value="buscar">
+<div class="inblcdiv1 inblcdiv2">
+    <div class="regforblock">
+	<form action="buscardbstuden.php" method="post"> 
+        <input type="text" name="buscar" class="buscar" id="buscar" value="">
+      <!-- <input type="submit" value="buscar">--->
     </form>
+</div>
+    </div>
+
 </div>
 </div>
 

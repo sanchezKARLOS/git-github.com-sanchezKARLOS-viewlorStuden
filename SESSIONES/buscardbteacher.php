@@ -1,3 +1,15 @@
+<?php
+session_start();
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=1){
+		header("location: index.php");
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +17,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/boarmain.css">
-  <title>Buscar estudiante</title>
+  <title>Buscar</title>
 </head>
 <body>
 <header>
@@ -162,7 +174,7 @@ $buscar = $_POST['buscar'];
             </tr>
 <?php
 $query =mysqli_connect("localhost", "root", "", "softwareducativo");
- $sql = "SELECT id, nombre, apellido, tipoaep, cdteacher, clave FROM docente
+ $sql = "SELECT * FROM docente
  where nombre like '$buscar' '%' or apellido like '$buscar' '%' order by id desc ";
  $resultado = mysqli_query($query, $sql);
  while ($mostrar = mysqli_fetch_array($resultado)){

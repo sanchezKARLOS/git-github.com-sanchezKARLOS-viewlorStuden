@@ -76,10 +76,8 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12 col-md-10 col-md-offset-1">
-<form action="buscardb.php" method="post">
+<form action="buscardbteacher.php" method="post">
     <input type="text" name="buscar" class="buscar" id="buscar">
-    <input type="submit" value="buscar">
-    <a href="./student.php">nuevo</a>
     </form>
 </div>
 </div>
