@@ -1,4 +1,5 @@
 <?php
+
 include "basedatos.php";
 
 $Id_Persona=$_SESSION['Id_Persona'];

@@ -1,6 +1,9 @@
 <?php
+
 session_start();
+
 $P_Nombre=$_SESSION['P_Nombre'];
+
 if(!isset($_SESSION['Id_Roles'])){
 	header("location: index.php");
 }
