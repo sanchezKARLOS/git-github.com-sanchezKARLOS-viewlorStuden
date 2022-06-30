@@ -20,31 +20,36 @@ if(isset($_POST['Id_Persona']) &&  isset($_POST['Clave']))
 
             if($Clavebased == $Clave_C){
          
-                $_SESSION ['Id_Persona'] = $row ['Id_Persona'];
-                $_SESSION ['Id_Roles']= $row ['Id_Roles'];
-                $_SESSION ['P_Nombre']= $row ['P_Nombre'];
                
-            switch($_SESSION['Id_Roles'])
-            {
-                case 1:  header("location: home.php");
-                break;
-                case 2:  header("location: paneldocente.php");
-                break;
-                case 3:  header("location: panelestudiante.php");
-                break;
-                default;
+                if($row['Estado']==1){
 
-            }
-           
+                    $_SESSION ['Id_Persona'] = $row ['Id_Persona'];
+                    $_SESSION ['Id_Roles']= $row ['Id_Roles'];
+                    $_SESSION ['P_Nombre']= $row ['P_Nombre'];
+
+
+                    switch($_SESSION['Id_Roles'])
+                    {
+                        case 1:  header("location: home.php");
+                        break;
+                        case 2:  header("location: paneldocente.php");
+                        break;
+                        case 3:  header("location: panelestudiante.php");
+                        break;
+                        default;
+        
+                    }
+
+                }
+                else{
+                    echo("<div class='alert alert-danger'> Usuario inactivo, contacte al administrador del sistema</div>");
+                } 
         }
-        else{echo ("Error, La Contraseña no coinciden.");}
- 
-
+        else{  echo "Error, La contraseña no coinciden";}
         } else{
             echo ("problema al validar los datos");
             header("location: index.php");
             }
-
 }
 else{echo ("Error, Los campo no pueden estar vacios.");}
 mysqli_free_result($resultado);

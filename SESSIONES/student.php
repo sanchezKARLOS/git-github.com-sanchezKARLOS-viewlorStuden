@@ -1,3 +1,15 @@
+<?php
+session_start();
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=1){
+		header("location: index.php");
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -58,6 +70,7 @@
 				</li>
 			</ul>
 		</nav>
+		
 		<!-- Content page -->
 	
 			<!-- Content page -->
@@ -67,8 +80,8 @@
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
+		
 			<!--from-->
-
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12">
@@ -170,11 +183,9 @@ $query =mysqli_connect("localhost", "root", "", "softwareducativo");
 					</div>
 				</div>
 			</div>
+			</section>
 
-
-
-
-		
+	
 <!--end from-->
 	
 	<!-- Notifications area -->

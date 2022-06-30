@@ -55,3 +55,6 @@
             eventRender: $scope.eventRender
         }
     };
+
+
+   

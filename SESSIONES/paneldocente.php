@@ -57,16 +57,6 @@ else{
 						</li>
 					</ul>
 				</li>
-				<!--<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						</i>Curso<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="section.html"></i>Ver Estado de Curso</a>
-						</li>
-					</ul>
-				</li>--->
 				<li>
 							<a href="SectionHojadevidaDocente.php"></i>Hoja de vida Docente</a>
 						</li>
@@ -111,7 +101,7 @@ else{
 			  <h1 class="text-titles">Panel de control <small>Docente</small></h1>
 			</div>
 		</div>
-		</div>
+		
 	</section>
 
 	<!-- Notifications area -->

@@ -97,8 +97,9 @@
 			<td scope="col">Codigo Docente </td>
             <td scope="col">Grado</td>
 			<td scope="col">Estado</td>
-			<td scope="col">Estado</td>
-            <td scope="col">OPCIONES</td>
+			<td scope="col">Opciones</td>
+			
+			
         </tr>
 </thead>
 <?php
@@ -108,7 +109,8 @@ INNER JOIN estudiante estudiante ON persona.Id_Persona = estudiante.Id_IdPersona
 while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 
 ?>
-<tbody>
+
+<tbody> 
 <tr>
 <td><?php echo $mostrar['Id_Persona']?></td>
 <td><?php echo $mostrar['P_Nombre']?></td>
@@ -117,25 +119,24 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 <td><?php echo $mostrar['S_Apellido']?></td>
 <td><?php echo $mostrar['Cd_Docente']?></td>
 <td><?php echo $mostrar['Grado']?></td>
-<td><?php echo $mostrar['Estado']?>
-<?php
-if($mostrar['Estado']!="1"){
-             echo'<td><button class="btn btn-danger btnprueba btn-xs">Inactivo</button></td>';
+<td>
+	<?php
+if($mostrar['Estado']=="1"){
+             echo'<a href ="Estado.php?Id_Persona='.$mostrar['Id_Persona'].'&Estado=0" class="btn btn-success btnprueba btn-xs">Activo</a>';
           }else{
-             echo'<td><button class="btn btn-success btnprueba btn-xs">Activo</button></td>';
+             echo'<a href ="Estado.php?Id_Persona='.$mostrar['Id_Persona'].'&Estado=1" class="btn btn-danger btnprueba btn-xs">Inactivo</a>';
           }
-		  
- ?>
+?>
 </td>
 <td> 
-    <a href="editarstuden.php?
+<a href="editarteacher.php?
     Id_Persona=<?php echo $mostrar['Id_Persona']?> &
 	P_Nombre=<?php echo $mostrar['P_Nombre']?> &
     S_Nombre=<?php echo $mostrar['S_Nombre']?> &
 	P_Apellido=<?php echo $mostrar['P_Apellido']?> &
     S_Apellido=<?php echo $mostrar['S_Apellido']?> &
-    Cd_Docente=<?php echo $mostrar['Cd_Docente']?>  &
-	Grado=<?php echo $mostrar['Grado']?> &
+	Clave=<?php echo $mostrar['Clave']?>
+
     ">editar</a>
 </td>
 </tr>
@@ -143,6 +144,7 @@ if($mostrar['Estado']!="1"){
 <?php
 }
 ?>
+</tbody>
 </table>
 										</div>
 									</div>
@@ -160,6 +162,7 @@ if($mostrar['Estado']!="1"){
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/material.min.js"></script>
 	<script src="./js/ripples.min.js"></script>
+	<script src="./js/evitarenvioformulario.js"></script>
 	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="./js/main.js"></script>
 	<script>

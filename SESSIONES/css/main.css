@@ -95,11 +95,12 @@ body, html{
 	top: 0;
 	height: 100%;
 	transition: all .3s ease-in-out;
+	overflow: hidden;
 }
 /*sideBar*/
 .dashboard-sideBar,
 .dashboard-sideBar-ct{
-	width: 290px;
+	width: 260px;
 }
 .dashboard-sideBar{
 	background: #003147;
@@ -111,12 +112,14 @@ body, html{
 .dashboard-sideBar-ct{
 	position: relative;
 	height: 100%;
+	width: 100%;
 	padding: 0 10px;
 	padding-bottom: 30px;
 }
 .dashboard-sideBar-title,
 .dashboard-sideBar-title > i{
 	height: 50px;
+	overflow: hidden;
 	line-height: 50px;
 	color: #ecebeb; /*titulo de matematica basica*/
 	font-size: 13px;
@@ -237,6 +240,7 @@ body, html{
 .dashboard-Navbar{
 	background-color: #b1b1b1;
 	overflow: hidden;
+	width: 2100px;
 }
 .dashboard-Navbar > ul >li,
 .dashboard-Navbar > ul > li > a{

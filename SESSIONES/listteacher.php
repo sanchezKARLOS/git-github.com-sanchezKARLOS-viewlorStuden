@@ -93,6 +93,7 @@
 		      	<td scope="col">Apellido </td>
             <td scope="col">Segundo Apellido </td>
             <td scope="col">Clave </td>
+			<td scope="col">Estado</td>
             <td scope="col">OPCIONES</td>
         </tr>
 <?php
@@ -109,6 +110,14 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 <td><?php echo $mostrar['P_Apellido']?></td>
 <td><?php echo $mostrar['S_Apellido']?></td>
 <td><?php echo $mostrar['Clave']?></td>
+<td><?php
+if($mostrar['Estado']=="1"){
+             echo'<a href ="Estado.php?Id_Persona='.$mostrar['Id_Persona'].'&Estado=0" class="btn btn-success btnprueba btn-xs">Activo</a>';
+          }else{
+             echo'<a href ="Estado.php?Id_Persona='.$mostrar['Id_Persona'].'&Estado=1" class="btn btn-danger btnprueba btn-xs">Inactivo</a>';
+          }
+?>
+</td>
 <td> 
 <a href="editarteacher.php?
     Id_Persona=<?php echo $mostrar['Id_Persona']?> &
@@ -117,12 +126,8 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 	P_Apellido=<?php echo $mostrar['P_Apellido']?> &
     S_Apellido=<?php echo $mostrar['S_Apellido']?> &
 	Clave=<?php echo $mostrar['Clave']?>
+
     ">editar</a>
-
-
-    <a href="./mainteacher.php"?
-    id=<?php echo $mostrar['0']?>
-    ">eliminar</a>
 </td>
 </tr>
 <?php
