@@ -31,9 +31,9 @@ CONTENTS:
 		position: absolute;
 		/* overflow: hidden; */
 		height: 40px;
-		max-width: 100%;
-		outline: none;
-		/* direction: ltr; */
+		max-width: 1024px;
+		/* outline: none; */
+		direction: ltr;
 	}
 
 	.mCSB_container{ /* contains the original content */

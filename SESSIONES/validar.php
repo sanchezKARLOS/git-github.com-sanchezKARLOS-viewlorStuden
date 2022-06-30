@@ -11,9 +11,7 @@ if(isset($_POST['Id_Persona']) &&  isset($_POST['Clave']))
     $consulta ="SELECT * FROM personas WHERE  Id_Persona='$Id_Persona' and Clave='$Clave'";
     $resultado = mysqli_query($mysqli,$consulta);
     $fila = mysqli_num_rows($resultado);
-
-
-
+    
         if($fila>0){
 
             $row = $resultado->fetch_assoc();
