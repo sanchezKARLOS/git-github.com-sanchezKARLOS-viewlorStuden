@@ -96,6 +96,8 @@
             <td scope="col">Segundo Apellido </td>
 			<td scope="col">Codigo Docente </td>
             <td scope="col">Grado</td>
+			<td scope="col">Estado</td>
+			<td scope="col">Estado</td>
             <td scope="col">OPCIONES</td>
         </tr>
 </thead>
@@ -115,6 +117,16 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 <td><?php echo $mostrar['S_Apellido']?></td>
 <td><?php echo $mostrar['Cd_Docente']?></td>
 <td><?php echo $mostrar['Grado']?></td>
+<td><?php echo $mostrar['Estado']?>
+<?php
+if($mostrar['Estado']!="1"){
+             echo'<td><button class="btn btn-danger btnprueba btn-xs">Inactivo</button></td>';
+          }else{
+             echo'<td><button class="btn btn-success btnprueba btn-xs">Activo</button></td>';
+          }
+		  
+ ?>
+</td>
 <td> 
     <a href="editarstuden.php?
     Id_Persona=<?php echo $mostrar['Id_Persona']?> &

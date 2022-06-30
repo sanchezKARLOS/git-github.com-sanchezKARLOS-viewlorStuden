@@ -44,7 +44,7 @@ else{
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="matmateria.html">Ver Notas</a>
+							<a href="NotaEstudiante.php">Ver Notas</a>
 						</li>
 					</ul>
 				</li>

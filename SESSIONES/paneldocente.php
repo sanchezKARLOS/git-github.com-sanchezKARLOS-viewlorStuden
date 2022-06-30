@@ -14,7 +14,7 @@ else{
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Inicio</title>
+	<title>Panel Docente</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -50,11 +50,11 @@ else{
 							<a href="DocenteListStuden.php"></i>Ver Estudiante Matriculados</a>
 						</li>
 						<li>
-							<a href="DocenteNotaEstudiante.php"></i>Notas de Estudiantes</a>
+							<a href="DocenteNotasEstudiante.php"></i>Notas de Estudiantes</a>
 						</li>
 					</ul>
 				</li>
-				<li>
+				<!--<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
 						</i>Curso<i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
@@ -63,9 +63,9 @@ else{
 							<a href="section.html"></i>Ver Estado de Curso</a>
 						</li>
 					</ul>
-				</li>
+				</li>--->
 				<li>
-							<a href="salon.html"></i>Hoja de vida Docente</a>
+							<a href="SectionHojadevidaDocente.php"></i>Hoja de vida Docente</a>
 						</li>
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
@@ -74,9 +74,6 @@ else{
 					<ul class="list-unstyled full-box">
 						<li>
 							<a href="solicasesoria.html"> estado de cuenta</a>
-						</li>
-						<li>
-							<a href="erro404.html">Eliminar mi cuenta</a>
 						</li>
 					</ul>
 				</li>
@@ -125,9 +122,7 @@ else{
 			  	<div class="list-group-separator"></div>
 			  	<div class="list-group-item">
 				    <div class="row-content">
-				      <?php	
-					  require("cajatext.html");
-					  ?>
+				      
 				    </div>
 			  	</div> 	
 			</div>

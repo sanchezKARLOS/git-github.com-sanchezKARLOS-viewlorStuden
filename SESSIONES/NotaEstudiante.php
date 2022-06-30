@@ -20,15 +20,18 @@ else{
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+	<!-- SideBar -->
 	<section class="full-box cover dashboard-sideBar">
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
-			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title"><small>Bienvenido <?php echo $P_Nombre; ?></small></div>
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+			<small>Bienvenido <?php echo $P_Nombre; ?></small></div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
-				<figure class="full-box"><img src="./img/user1.png" alt="UserIcon">
-				</figure>
+				<figure class="full-box">
+					<img src="./img/user1.png" alt="UserIcon">
+					</figure>
 			
 			</div>
 			<!-- SideBar Menu -->
@@ -42,18 +45,18 @@ else{
 		</div>
 	</section>
 
-	<!-- CONTENERDOR DE LAS PAGINAS-->
+	<!-- Content page-->
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">
 			<ul class="full-box list-unstyled">
-				<li class="pull-left">
+			<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
 				<li>
 					<a href="#!" class="btn-Notifications-area">
 						<i class="zmdi zmdi-notifications-none"></i>
-						<span class="badge">1</span>
+					
 					</a>
 				</li>
 				<li>
@@ -63,25 +66,24 @@ else{
 				</li>
 			</ul>
 		</nav>
-
-    <div class="container-fluid">
+		<!-- Content page -->
+		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">Hoja de vida <small>Estudiante</small></h1>
+			  <h1 class="text-titles">Nota de examenes realizados</h1>
 			</div>
 		</div>
-  
-    <div class="contenedor">
-      
-      <header class="clearfix">
-        
-        <?php
-		include "Hojadevida.php";
-        ?>
-
-   
-  
+		</div>
 	</section>
 
+	<!-- Notifications area -->
+	<div>
+		<section class="full-box dashboard-contentPage">
+		<?php
+include "TablaNota.php";
+		?>
+		</section>
+	
+	</div>
 
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
@@ -94,7 +96,6 @@ else{
 	<script>
 		$.material.init();
 	</script>
-
 
 </body>
 </html>

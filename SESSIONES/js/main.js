@@ -10,6 +10,7 @@ $(document).ready(function(){
 			SubMenu.addClass('show-sideBar-SubMenu');
 		}
 	});
+	
 	$('.btn-exit-system').on('click', function(){
 		swal({
 		  	title: 'Estas Seguro?',
@@ -20,13 +21,13 @@ $(document).ready(function(){
 		  	cancelButtonColor: '#F44336',
 		  	confirmButtonText: 'Si, Salir!',
 		  	cancelButtonText: ' No, Cancelar!'
-		}).then(function () {
-			if(confirmButtonText){
+		}).then((result) => {
+			if(result.value){
 				window.location.href="index.php";
 				
 			}
 			else
-			{alert("error");}
+			{}
 			
 		});
 	});

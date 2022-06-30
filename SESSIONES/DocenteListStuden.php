@@ -1,7 +1,20 @@
+<?php
+session_start();
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=2){
+		header("location: index.php");
+	}
+}
+?>
+	
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Estudiante</title>
+	<title>Docente</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -13,9 +26,7 @@
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
-			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematicas Basica
-			</div>
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title"><small>Bienvenido <?php echo $P_Nombre; ?></small></div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
@@ -28,16 +39,6 @@
 					<a href="paneldocente.php">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
-				</li>
-				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i> Configuracion Estudio<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="erro404.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>Datos de estudio</a>
-						</li>
-					</ul>
 				</li>
 			</ul>
 		</div>

@@ -206,11 +206,7 @@
                         <div class="address">
                           <h3>Cursos</h3>
                           <ul class="Menu_footer">
-                            <li class="active"> <a href="#">Estructuras de datos</a> </li>
                             <li><a href="#">Matematicas Basicas</a> </li>
-                            <li><a href="#">Ciencias</a> </li>
-                            <li><a href="#">Conoce tus Habilidades</a> </li>
-                            <li><a href="#">Software Movil</a> </li>
                           </ul>
                         </div>
                       </div>
@@ -218,11 +214,9 @@
                         <div class="address">
                           <h3>Informacion</h3>
                           <ul class="Links_footer">
-                            <li class="active"><a href="#">Todos los campos</a> </li>
-                            <li><a href="#">Estudiantes </a> </li>
                             <li><a href="#">Escuelas</a> </li>
                             <li><a href="#">Admisiones</a> </li>
-                            <li><a href="#">En donde nos puedes encontrar</a> </li>
+                      
                           </ul>
                         </div>
                       </div>

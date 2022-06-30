@@ -14,24 +14,21 @@ else{
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Tabla Nota</title>
+	<title>Estudiante</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-	<!-- SideBar -->
 	<section class="full-box cover dashboard-sideBar">
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
-			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-			<small>Bienvenido <?php echo $P_Nombre; ?></small></div>
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title"><small>Bienvenido <?php echo $P_Nombre; ?></small></div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
-				<figure class="full-box">
-					<img src="./img/user1.png" alt="UserIcon">
-					</figure>
+				<figure class="full-box"><img src="./img/user1.png" alt="UserIcon">
+				</figure>
 			
 			</div>
 			<!-- SideBar Menu -->
@@ -41,48 +38,22 @@ else{
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>Inicio
 					</a>
 				</li>
-				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						</i>Curso<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="section.html"></i>Ver Estado de Curso</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-							<a href="salon.html"></i>Hoja de vida Docente</a>
-						</li>
-				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i>Configuracion Cuenta<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="solicasesoria.html"> estado de cuenta</a>
-						</li>
-						<li>
-							<a href="erro404.html">Eliminar mi cuenta</a>
-						</li>
-					</ul>
-				</li>
 			</ul>
 		</div>
 	</section>
 
-	<!-- Content page-->
+	<!-- CONTENERDOR DE LAS PAGINAS-->
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">
 			<ul class="full-box list-unstyled">
-			<li class="pull-left">
+				<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
 				<li>
 					<a href="#!" class="btn-Notifications-area">
 						<i class="zmdi zmdi-notifications-none"></i>
-					
+						<span class="badge">1</span>
 					</a>
 				</li>
 				<li>
@@ -92,24 +63,25 @@ else{
 				</li>
 			</ul>
 		</nav>
-		<!-- Content page -->
-		<div class="container-fluid">
+
+    <div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">Nota de<small>Estudiante</small></h1>
+			  <h1 class="text-titles">Hoja de vida <small>Estudiante</small></h1>
 			</div>
 		</div>
-		</div>
+  
+    <div class="contenedor">
+      
+      <header class="clearfix">
+        
+        <?php
+		include "Hojadevida.php";
+        ?>
+
+   
+  
 	</section>
 
-	<!-- Notifications area -->
-	<div>
-		<section class="full-box dashboard-contentPage">
-		<?php
-include "TablaNota.php";
-		?>
-		</section>
-	
-	</div>
 
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
@@ -122,6 +94,7 @@ include "TablaNota.php";
 	<script>
 		$.material.init();
 	</script>
+
 
 </body>
 </html>

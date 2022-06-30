@@ -1,38 +1,51 @@
+<?php
+include "basedatos.php";
+
+$Id_Persona=$_SESSION['Id_Persona'];
+$sql = "SELECT * FROM personas where Id_Persona = $Id_Persona";
+$resultado = mysqli_query($mysqli, $sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./css/hojadevida.css">
+    <link rel="stylesheet" href="./css/hojadevida.css">
 
 </head>
 <body>
   
+<?php
+while ($mostrar=mysqli_fetch_array($resultado)){
+?>
 <div class="mi-titulo">
-          <h1><spam>Carlos</spam> Carvajal</h1>
+          <h1><spam><?php echo $mostrar['P_Nombre']?> </spam> <spam><?php echo $mostrar['S_Nombre'] ?></spam>  <spam><?php echo $mostrar['P_Apellido'] ?></spam> <spam><?php echo $mostrar['S_Apellido'] ?></spam></h1>
+  
         </div>
         
         <div class="datos-personales">
-          <p><spam>Correo: </spam>carvajal@hotmail.com </p>
-          <p><spam>Twitter: </spam>@carvajal</p>
-          <p><spam>Pais: </spam>Colombia</p>
-        </div>
+          <p><spam>Su Id</spam> <?php echo $mostrar['Id_Persona']?> </p>
+          <?php
+    }
+    ?>
         
-      </header>
+          <!--<p><spam>Grado </spam><?php ?></p>-->
+        </div>
 
       <section class="clearfix">
         <div class="panel-izquierdo">
-          <h2>Experiencia Laboral</h2>
+          <h2>Datos Familiares</h2>
           
           <div class="periodo">
-            <p>2009</p>              
+            <p></p>              
           </div>
 
           <div class="empresa">
-            <p><spam>Gobernanción del Tolima</spam></p>
-            <p>Pasantia Laboral</p>
-            <p>Se trabajo en las instalaciones de la gobernancoón del tolima</p>
+            <p><spam></spam></p>
+            <p></p>
+            <p></p>
           </div>
           
         </div>
@@ -46,7 +59,8 @@
       <footer>
       </footer>
       
-    </div> <!-- FIN contenedor -->
+    </div> <!
+    - FIN contenedor -->
     
 </body>
 </html>

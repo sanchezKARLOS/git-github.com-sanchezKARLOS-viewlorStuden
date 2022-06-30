@@ -63,11 +63,6 @@ else{
 						</i>quiz5
 					</a>
 				</li>
-				<li>
-					<a href="panelestudiante.php">
-						</i>Volver a Repetir
-					</a>
-				</li>
 			</ul>
 		</div>
 	</section>
