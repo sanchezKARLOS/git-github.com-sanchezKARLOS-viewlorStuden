@@ -79,7 +79,6 @@
 <form action="buscardb.php" method="post">
     <input type="text" name="buscar" class="buscar" id="buscar">
     <input type="submit" value="buscar">
-    <a href="./student.php">nuevo</a>
     </form>
 </div>
 </div>
@@ -97,7 +96,7 @@
 			<td scope="col">Codigo Docente </td>
             <td scope="col">Grado</td>
 			<td scope="col">Estado</td>
-			<td scope="col">Opciones</td>
+			<td scope="col"><i class="zmdi zmdi-settings"></i> Opciones</td>
 			
 			
         </tr>
@@ -137,8 +136,11 @@ if($mostrar['Estado']=="1"){
     S_Apellido=<?php echo $mostrar['S_Apellido']?> &
 	Clave=<?php echo $mostrar['Clave']?>
 
-    ">editar</a>
+    ">Editar</a>
+
+<a href="./student.php">Registrar</a>
 </td>
+
 </tr>
 
 <?php

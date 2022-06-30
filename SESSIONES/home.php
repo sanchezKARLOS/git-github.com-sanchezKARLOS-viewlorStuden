@@ -46,14 +46,10 @@ else{
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="student.php"></i>Registrar Estudiante</a>
+							<a href="student.php"><i class="ti ti-user-plus"></i>Registrar Estudiante</a>
 						</li>
 						<li>
-							<a href="liststuden.php"></i> Listado Estudiante
-						</a>
-						</li>
-						<li>
-							<a href="horario.html"><i class="zmdi zmdi-settings"></i>  Editar Estudiante
+							<a href="liststuden.php">Listado Estudiante
 						</a>
 						</li>
 						
@@ -70,9 +66,6 @@ else{
 						<li>
 							<a href="listteacher.php"> Listado Docente
 						</a>
-						</li>
-						<li>
-						 <a href=""><i class="zmdi zmdi-settings"></i>  Editar Docente</a>
 						</li>
 					</ul>
 				</li>

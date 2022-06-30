@@ -127,8 +127,10 @@ if($mostrar['Estado']=="1"){
     S_Apellido=<?php echo $mostrar['S_Apellido']?> &
 	Clave=<?php echo $mostrar['Clave']?>
 
-    ">editar</a>
+    ">Editar</a>
+<a href="./teacher.php">Registrar</a>
 </td>
+
 </tr>
 <?php
 }
