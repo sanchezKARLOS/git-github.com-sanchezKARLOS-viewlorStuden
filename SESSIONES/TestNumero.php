@@ -23,14 +23,14 @@ else{
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container">
-        <!-- {{-- Videos --}} -->
+
         <div class="card-body">
         <div class="container">
                         <section class="p0">
+                            <div class="divcenimnum">
                             <h3>1. ¿Que numero es?</h3>
                             <img src="./Numeros/1.png" width="250px" height="250px">
-
+                            </div>
                             <label>
                                 <input type="radio" value="1" name="p0" onclick="respuesta(0, this)">
                                 Nueve
@@ -50,9 +50,10 @@ else{
                         </section>
 
                         <section class="p">
+                        <div class="divcenimnum">
                             <h3>2. ¿Que numero es?</h3>
                             <img src="./Numeros/5.png" width="250px" height="250px">
-
+                            </div>
                             <label>
                                 <input type="radio" value="1" name="p1" onclick="respuesta(1, this)">
                                 Siete
@@ -71,9 +72,10 @@ else{
                         </section>
 
                         <section class="p2">
+                        <div class="divcenimnum">
                             <h3>3. ¿Que numero es?</h3>
                             <img src="./Numeros/8.png" width="250px" height="250px">
-
+</div>
                             <label>
                                 <input type="radio" value="1" name="p2"
                                     onclick="respuesta(2, this)">Cinco
@@ -93,9 +95,10 @@ else{
                         </section>
 
                         <section class="p3">
+                        <div class="divcenimnum">
                             <h3>4. ¿Que numero es?</h3>
                             <img src="./Numeros/9.png" width="250px" height="250px">
-
+</div>
                             <label>
                                 <input type="radio" value="1" name="p3" onclick="respuesta(3, this)">
                                 Cuatro
@@ -117,9 +120,10 @@ else{
                         </section>
 
                         <section class="p4">
+                        <div class="divcenimnum">
                             <h3>5. ¿Que numero es?</h3>
                             <img src="./Numeros/3.png" width="250px" height="250px">
-
+</div>
                             <label>
                                 <input type="radio" value="1" name="p4"
                                     onclick="respuesta(4, this)">
@@ -143,9 +147,10 @@ else{
                         </section>
 
                         <section class="p5">
+                        <div class="divcenimnum">
                             <h3>6. ¿Que numero es?</h3>
                             <img src="./Numeros/6.png" width="250px" height="250px">
-
+</div>
                             <label>
                                 <input type="radio" value="1" name="p5"
                                     onclick="respuesta(5, this)">
@@ -169,9 +174,10 @@ else{
                         </section>
 
                         <section class="p6">
+                        <div class="divcenimnum">
                             <h3>7. ¿Que numero es?</h3>
                             <img src="./Numeros/2.png" width="250px" height="250px">
-
+</div>
                             <label>
                                 <input type="radio" value="1" name="p6"
                                     onclick="respuesta(6, this)">
@@ -195,9 +201,10 @@ else{
                         </section>
 
                         <section class="p7">
+                        <div class="divcenimnum">
                             <h3>8. ¿Que numero es?</h3>
                             <img src="./Numeros/7.png" width="250px" height="250px">
-
+</div>
                             <label>
                                 <input type="radio" value="1" name="p7"
                                     onclick="respuesta(7, this)">
@@ -221,9 +228,10 @@ else{
                         </section>
 
                         <section class="p8">
+                        <div class="divcenimnum">
                             <h3>9. ¿Que numero es?</h3>
                             <img src="./Numeros/10.png" width="250px" height="250px">
-
+</div>
                             <label>
                                 <input type="radio" value="1" name="p8"
                                     onclick="respuesta(8, this)">
@@ -247,9 +255,10 @@ else{
                         </section>
 
                         <section class="p9">
+                        <div class="divcenimnum">
                             <h3>10. ¿Que numero es?</h3>
                             <img src="./Numeros/4.png" width="250px" height="250px">
-
+                        </div>
                             <label>
                                 <input type="radio" value="1" name="p9"
                                     onclick="respuesta(9, this)">
@@ -277,7 +286,5 @@ else{
                         <h2>Califiacion: <span id="resultado"></span></h2>
                     </div>
         </div>        
-
-
 </body>
 </html>
