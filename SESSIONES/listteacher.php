@@ -74,13 +74,6 @@
 <div id="myTabContent" class="tab-content">
 <div class="tab-pane fade active in" id="new">
 <div class="container-fluid">
-<div class="row">
-<div class="col-xs-12 col-md-10 col-md-offset-1">
-<form action="buscardbteacher.php" method="post">
-    <input type="text" name="buscar" class="buscar" id="buscar">
-    </form>
-</div>
-</div>
 <div>
 <div>
     <table border="1px" class="table">

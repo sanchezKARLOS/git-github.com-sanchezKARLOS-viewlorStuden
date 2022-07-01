@@ -1,7 +1,19 @@
+<?php
+session_start();
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=1){
+		header("location: index.php");
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Estudiante</title>
+	<title>Lista Estudiantes</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -14,8 +26,7 @@
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematicas Basica
-			</div>
+			<small>Bienvenido <?php echo $P_Nombre; ?></small></div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
@@ -76,15 +87,6 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12 col-md-10 col-md-offset-1">
-<div class="inblcdiv1 inblcdiv2">
-    <div class="regforblock">
-	<form action="buscardbstuden.php" method="post"> 
-        <input type="text" name="buscar" class="buscar" id="buscar" value="">
-      <!-- <input type="submit" value="buscar">--->
-    </form>
-</div>
-    </div>
-
 </div>
 </div>
 
@@ -133,16 +135,16 @@ if($mostrar['Estado']=="1"){
 ?>
 </td>
 <td> 
-<a href="editarteacher.php?
+<a href="editarstuden.php?
     Id_Persona=<?php echo $mostrar['Id_Persona']?> &
 	P_Nombre=<?php echo $mostrar['P_Nombre']?> &
     S_Nombre=<?php echo $mostrar['S_Nombre']?> &
 	P_Apellido=<?php echo $mostrar['P_Apellido']?> &
     S_Apellido=<?php echo $mostrar['S_Apellido']?> &
-	Clave=<?php echo $mostrar['Clave']?>
-
-    ">Editar</a>
-
+	Cd_Docente=<?php echo $mostrar['Cd_Docente']?> &
+    Grado=<?php echo $mostrar['Grado']?> &
+	Clave=<?php echo $mostrar['Clave']?>">Editar</a>
+	
 <a href="./student.php">Registrar</a>
 </td>
 

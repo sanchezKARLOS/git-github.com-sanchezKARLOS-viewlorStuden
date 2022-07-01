@@ -39,18 +39,18 @@ else{
 					</a>
 				</li>
 				<li>
-					<a href="RealizarQuiz.php">
-						</i>quiz1
+					<a href="PIntroduccionNumeros.php">
+						</i>Introduccion a los Numeros
 					</a>
 				</li>
 				<li>
-					<a href="Realizarquiz2.php">
-						</i>quiz2
+					<a href="PIntroduccionSuma.php">
+						</i>Introduccion a la Suma
 					</a>
 				</li>
 				<li>
-					<a href="Realizarquiz3.php">
-						</i>quiz3
+					<a href="php">
+						</i>Resta
 					</a>
 				</li>
 				<li>

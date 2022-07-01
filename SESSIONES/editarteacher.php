@@ -85,7 +85,7 @@
     $S_Apellido = $_GET['S_Apellido'];
     $Clave = $_GET['Clave'];
     ?>
-<form action="editardb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
+<form action="editardbteacher.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
     <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id

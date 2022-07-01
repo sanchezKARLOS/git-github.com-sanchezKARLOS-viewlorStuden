@@ -1,3 +1,15 @@
+<?php
+session_start();
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=1){
+		header("location: index.php");
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,9 +25,7 @@
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
-			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematicas Basica
-			</div>
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title"><small>Bienvenido <?php echo $P_Nombre; ?></small></div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
@@ -87,11 +97,11 @@
     $Grado = $_GET['Grado'];
     $Clave = $_GET['Clave'];
     ?>
-<form action="editardb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
+<form action="editardbstuden.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
     <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
     <label for="id" id="labelid" name="labelid">Codigo Id
-    <input type="text" name="Id_Persona" id="Id_Persona" class="id_Persona" value="<?=$Id_Persona?>" maxlength="10" autocomplete="off" disabled></label>
+    <input type="text" name="Id_Persona" id="Id_Persona" class="Id_Persona" value="<?=$Id_Persona?>" autocomplete="off" ></label>
      </div>
     </div>
 	
@@ -123,7 +133,7 @@
   <select name="Cd_Docente" id="Cd_Docente" class="Cd_Docente" require>
 	<?php
 require "basedatos.php";
- $sql = $mysqli->query("select * from docentes");
+ $sql = $mysqli->query("SELECT * from docentes");
  while ($mostrar = mysqli_fetch_array($sql)){
         $Id_Persona = $mostrar['Id_Persona'];
 		?>
@@ -148,7 +158,7 @@ require "basedatos.php";
 </div>
     <br><br>
 	<p class="text-center">
-		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i>actualizar</button>
+		<button  class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Actualizar</button>
 												</p>
 											</form>
   

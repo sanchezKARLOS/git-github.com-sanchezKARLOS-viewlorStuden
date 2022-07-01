@@ -14,7 +14,7 @@
 		<p class="text-muted"><i class="zmdi zmdi-account-circle zmdi-hc-5x"></i></p>
 		<p class=" text-muted text-uppercase">Iniciar sesión</p>
 		<div class="form-group label-floating">
-		  <label class="control-label" for="Id_Persona">Codigo Id</label>
+		  <label class="control-label" for="Id_Persona">Dni</label>
 		  <input class="form-control" id="Id_Persona" type="text" name="Id_Persona">
 		  <p class="help-block">Escribe tú Id</p>
 		</div>
@@ -28,7 +28,7 @@
 		</div>
 		<div class="form-group text-center">
 			<label class="control-label">¿No tienes cuenta?</label></br>
-			<a href="registrarstudent.html">Contacta al Administrador!</a></h4>
+			<a href="#!">Contacta al Administrador!</a></h4>
 			
 		</div>
 	</form>

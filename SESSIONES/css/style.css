@@ -1,0 +1,64 @@
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.container section{
+    border: 2px solid rgb(194, 184, 252);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed rgb(94, 118, 255);
+    margin-bottom: 3px;
+    color: black;
+}
+
+label:hover{
+    background: rgb(154, 154, 250);
+}
+
+.video{
+    text-align: center;
+    
+}
+
+button{
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* button:hover{
+    background-color: aqua;
+} */
+
+h2{
+    text-align: center;
+}
+
+h3{
+    padding: 7px;
+    margin: 7px;
+}
+
+#resultados{
+    font-size: 30px;
+    color: darkred;
+}
+
