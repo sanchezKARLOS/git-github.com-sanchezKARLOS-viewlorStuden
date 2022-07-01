@@ -53,16 +53,7 @@ else{
 						</i>Introduccion a la Resta
 					</a>
 				</li>
-				<li>
-					<a href="Realizarquiz4.php">
-						</i>quiz4
-					</a>
-				</li>
-				<li>
-					<a href="Realizarquiz5.php">
-						</i>quiz5
-					</a>
-				</li>
+			
 			</ul>
 		</div>
 	</section>
