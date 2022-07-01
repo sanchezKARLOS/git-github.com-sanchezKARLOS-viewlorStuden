@@ -366,9 +366,9 @@ body, html{
 }
 .tile-number{
 	right: 0;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+	--webkit-user-select: none;
+	--moz-user-select: none;
+	--ms-user-select: none;
 }
 .tile-number > p{
 	font-size: 70px;
@@ -490,8 +490,8 @@ body, html{
         height: 60px;
         left: 50%;
         margin-left: -30px;
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
+        --webkit-transform: translateZ(0);
+        --webkit-backface-visibility: hidden;
     }
     .cd-timeline-img img{
         width: 60px;
@@ -610,4 +610,9 @@ body, html{
 	.no-paddin-left{
 		padding-left: 0;
 	}
+}
+
+.div#mCSB_3_container{
+	position: relative;
+	padding-top: 100px;
 }
