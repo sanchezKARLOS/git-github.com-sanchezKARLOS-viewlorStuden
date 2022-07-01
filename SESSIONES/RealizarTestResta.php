@@ -14,10 +14,11 @@ else{
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Quiz test</title>
+	<title>Test Resta</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/Style.css">
 </head>
 <body>
 	<section class="full-box cover dashboard-sideBar">
@@ -33,14 +34,10 @@ else{
 			</div>
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				
 				<li>
 					<a href="RealizarTlQuizes.php">
-						Volver Atras
-					</a>
-				</li>
-				<li>
-					<a href="RealizarQuiz.php">
-						</i>Volver a Repetir
+					Volver Atras
 					</a>
 				</li>
 			</ul>
@@ -65,15 +62,15 @@ else{
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">Realizar <small>Test Quiz</small></h1>
+			  <h1 class="text-titles">Realizar <small>Test de Resta</small></h1>
 			</div>
 		</div>
-		<div>
-            <section>
-                <?php
-include "Quiz.php";
-                ?>
-            </section>
+	<div>
+        <section>
+            <?php
+            include "TestResta.php";
+            ?>
+        </section>
 		</div>
 	</section>
 	<!--====== Scripts -->

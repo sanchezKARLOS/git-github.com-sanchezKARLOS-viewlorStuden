@@ -14,10 +14,11 @@ else{
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Quiz test</title>
+	<title>Introduccion Resta</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<section class="full-box cover dashboard-sideBar">
@@ -34,14 +35,14 @@ else{
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				
-					<li>
+				<li>
 					<a href="RealizarTlQuizes.php">
 					Volver Atras
 					</a>
 				</li>
-				<li>
-					<a href="Realizarquiz4.php">
-						</i>Volver a Repetir
+                <li>
+					<a href="./RealizarTestResta.php">
+					Realizar Test Resta
 					</a>
 				</li>
 			</ul>
@@ -66,14 +67,16 @@ else{
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">Realizar <small>Test Quiz</small></h1>
+			  <h1 class="text-titles">Introduccion a la <small> Resta</small></h1>
 			</div>
 		</div>
-		<div>
-            <?php
-include "quiz4.php";
-            ?>
-		</div>
+	<div>
+          
+                <div class="card-body">
+                    <div class="video">
+                        <video src="./Resta/Resta.mp4" width="640" height="480" controls></video>
+                    </div>
+                </div>
 	</section>
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
@@ -81,6 +84,7 @@ include "quiz4.php";
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/material.min.js"></script>
 	<script src="./js/ripples.min.js"></script>
+	<script src="./js/logica.js"></script>
 	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="./js/main.js"></script>
 	<script>

@@ -49,8 +49,8 @@ else{
 					</a>
 				</li>
 				<li>
-					<a href="php">
-						</i>Resta
+					<a href="PIntroduccionResta.php">
+						</i>Introduccion a la Resta
 					</a>
 				</li>
 				<li>

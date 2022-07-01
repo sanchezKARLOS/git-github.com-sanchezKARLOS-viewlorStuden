@@ -62,7 +62,7 @@ else{
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">Realizar <small>Test Quiz</small></h1>
+			  <h1 class="text-titles">Realizar <small>Test de suma</small></h1>
 			</div>
 		</div>
 	<div>
