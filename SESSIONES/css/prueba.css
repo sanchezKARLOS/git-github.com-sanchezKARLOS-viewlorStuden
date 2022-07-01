@@ -2987,9 +2987,10 @@ html[dir="rtl"] .rel-btn .btn + .btn {
 .ci-tile {
   border: 1px solid #b1b1b1;
   border-radius: 5px;
-  height: 380px;
+  height: 390px;
   margin-bottom: 20px;
   position: relative;
+  /* padding-left: 50px; */
   width: 100%;
   background-color: white;
 }
@@ -4914,25 +4915,7 @@ html[dir="rtl"] div.item-list .pager >li.pager-current {
   font-size: 35px;
   border: none;
 }
-.maintenance-alert__modal.modal .maintenance-alert__modal__close:focus,
-.maintenance-alert__modal.modal .maintenance-alert__modal__closehover {
-  color: #cf2030;
-}
-.maintenance-alert__modal.modal .maintenance-alert__modal__content {
-  margin-bottom: 20px;
-  color: #39393b;
-  font-size: 16px;
-}
-html[dir="rtl"] .cui .maintenance-alert__container,
-html[dir="rtl"] .cui .system-message__container {
-  left: 60px;
-}
-html[dir="rtl"] .cui .maintenance-alert__container .icon-exclamation-circle,
-html[dir="rtl"] .cui .maintenance-alert__container .system-message__text,
-html[dir="rtl"] .cui .system-message__container .icon-exclamation-circle,
-html[dir="rtl"] .cui .system-message__container .system-message__text {
-  margin-left: 20px;
-}
+
 html[dir="rtl"] .cui .view-maintenance-alert .alert--warning {
   border-left-width: 1px;
   border-right-width: 48px;
@@ -5491,16 +5474,4 @@ a.btn--primary.btn.stop-import-button {
     width: 100%;
     max-width: 100%;
   }
-}
-html[dir="rtl"] .accredit-ins-wrapper .btn-holder .btn-left {
-  float: right !important;
-}
-html[dir="rtl"] .accredit-ins-wrapper .btn-holder .btn-right {
-  float: left !important;
-}
-body.cui.page-resources-alumni-courses table td {
-  white-space: pre-wrap;
-}
-body.cui.page-resources-alumni-courses table td:first-child {
-  width: 40%;
 }

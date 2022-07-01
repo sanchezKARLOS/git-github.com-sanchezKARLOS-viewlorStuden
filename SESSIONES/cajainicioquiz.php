@@ -59,8 +59,6 @@
                   <div class="acad-title" aria-label="CCNAv7: Switching, Routing, and Wireless Essentials" tabindex="2056">Curso de Suma</div>
                                             <div class="end-date-text" tabindex="2057" aria-label="Please&nbsp;finish by 31 Jul 2022">Finalizar 31 Jul 2022 </div>
                             </div>
-      
-      
                         </div>
                       <!-- Un-enroll link for Global Academy student  use-ajax-->
           </div>
@@ -68,6 +66,18 @@
       
        
   </div>
+  <article class="full-box tile">
+				<div class="full-box tile-title text-center text-titles text-uppercase">
+					Finalizacion del Curso
+				</div>
+				<div class="full-box tile-icon text-center">
+					<i class="zmdi zmdi-face"></i>
+				</div>
+				<div class="full-box tile-number text-titles">
+					<p class="full-box">70%</p>
+					<small>Completado</small>
+				</div>
+			</article>	
  </div>
  </body>
 </html>

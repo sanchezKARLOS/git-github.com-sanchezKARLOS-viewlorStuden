@@ -95,22 +95,10 @@ else{
 			  <h1 class="text-titles">Panel de control <small>Estudiante</small></h1>
 			</div>
 		</div>
-		<div class="full-box text-center" style="padding: 30px 10px;">	
-		<div style="margin: 0 rigth;">
+		<div class="full-box text-center">	
+		<div class="divdostable">
 		<?php require "cajainicioquiz.php";?>
-		</div>
-			<article class="full-box tile">
-				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Finalizacion del Curso
-				</div>
-				<div class="full-box tile-icon text-center">
-					<i class="zmdi zmdi-face"></i>
-				</div>
-				<div class="full-box tile-number text-titles">
-					<p class="full-box">70%</p>
-					<small>Completado</small>
-				</div>
-			</article>	
+			</div>
 		</div>
 	</section>
 
