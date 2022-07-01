@@ -92,12 +92,13 @@ body, html{
 .dashboard-sideBar-ct{
 	width: 260px;
 }
+
 .dashboard-sideBar{
 	left: 0;
 	z-index: 2;
-	background-image: url('../fondohome.jpg');
+    background-color: #003147;
 	border-right: 1px solid rgba(255, 255, 255, .4);
-	/* overflow: hidden; */
+
 }
 .dashboard-sideBar-ct{
 	position: relative;
