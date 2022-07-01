@@ -98,7 +98,8 @@ else{
 		<div class="full-box text-center">	
 		<div class="divdostable">
 		<?php require "cajainicioquiz.php";?>
-			</div>
+		
+	    </div>
 		</div>
 	</section>
 
