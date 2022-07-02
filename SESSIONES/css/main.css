@@ -64,20 +64,22 @@ body, html{
 /*============ LogIn*/
 .logInForm{
 	position: absolute;
-	color: #fff;
-	padding-bottom: 5%;top: 50%;
-	height: 60%;left: 50%;
+	padding-bottom: 5%;
+	top: 50%;
+	height: 60%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 90%;
 	max-width: 300px;
 	padding: 12px;
 	box-shadow: 0 0 7px 0px rgb(0 0 0 / 70%);
 	border-radius: 0 0 2px 2px;
-	background-color:transparent;
+	background-color: #003147;
 }
 .logInForm p,
-.logInForm label{
-	color: #2c2a2a;
+.logInForm label{	
+	font-size: 15px;
+	color: #ffffff;
 }
 /*============ Partes del dashboard*/
 .dashboard-sideBar,

@@ -113,9 +113,7 @@ include "basedatos.php";
 $sql =$mysqli->query("SELECT * FROM personas persona
 INNER JOIN estudiante estudiante ON persona.Id_Persona = estudiante.Id_IdPersona");
 while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
-
 ?>
-
 <tbody> 
 <tr>
 <td><?php echo $mostrar['Id_Persona']?></td>

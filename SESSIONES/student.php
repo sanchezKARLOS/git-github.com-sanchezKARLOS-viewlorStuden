@@ -26,8 +26,7 @@ else{
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematicas Basica
-			</div>
+			<small>Bienvenido <?php echo $P_Nombre; ?></small></div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">

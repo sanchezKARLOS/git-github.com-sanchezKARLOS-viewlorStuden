@@ -56,6 +56,13 @@ y-axis
 		margin-right: 0;
 		margin-left: 30px;
 	}
+
+	div#mCSB_3_container {
+		padding-top: 200px;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
 	
 	.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-left: 0; } /* RTL direction/left-side scrollbar */
 

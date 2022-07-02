@@ -51,19 +51,6 @@ else{
 				<li>
 					<a href="SectionHojadevida.php" class="btn-sideBar-SubMenu">Ver Hoja de vida Estudiante</a>
 				</li>
-				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i>Configuracion Cuenta<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="solicasesoria.html"> estado de cuenta</a>
-						</li>
-						<li>
-							<a href="erro404.html">Eliminar mi cuenta</a>
-						</li>
-					</ul>
-				</li>
 			</ul>
 		</div>
 	</section>

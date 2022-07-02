@@ -108,13 +108,14 @@ else{
 			  <h1 class="text-titles">Panel de control <small>Administrador</small></h1>
 			</div>
 		</div>
-		<div class="full-box text-center" style="padding: 30px 10px;">			
+<div>
+<div class="full-box text-center" style="padding: 30px 10px;">			
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
 					Estudiantes Matriculados
 				</div>
 				<div class="full-box tile-icon text-center">
-				<!--<i class="zmdi zmdi-face"></i>-->
+				<i class="zmdi zmdi-face"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
 					<p class="full-box">40%</p>
@@ -128,7 +129,7 @@ else{
 					Docente Registrado
 				</div>
 				<div class="full-box tile-icon text-center">
-					<!--<i class="zmdi zmdi-face"></i>-->
+					<i class="zmdi zmdi-face"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
 					<p class="full-box">20%</p>
@@ -136,6 +137,9 @@ else{
 				</div>
 			</article>	
 		</div>
+	</div>
+		
+	
 		</section>
 
 	<!--====== Scripts -->
