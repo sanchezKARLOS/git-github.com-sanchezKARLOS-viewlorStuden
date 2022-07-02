@@ -93,6 +93,7 @@ include "DocenteNota.php";
 	<script src="./js/ripples.min.js"></script>
 	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="./js/main.js"></script>
+	<script src="./js/validarcomentario.js"></script>
 	<script>
 		$.material.init();
 	</script>

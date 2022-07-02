@@ -60,16 +60,7 @@ else{
 				<li>
 							<a href="SectionHojadevidaDocente.php"></i>Hoja de vida Docente</a>
 						</li>
-				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i>Configuracion Cuenta<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="solicasesoria.html"> estado de cuenta</a>
-						</li>
-					</ul>
-				</li>
+
 			</ul>
 		</div>
 	</section>

@@ -15,13 +15,13 @@
 		<p class=" text-muted text-uppercase">Iniciar sesión</p>
 		<div class="form-group label-floating">
 		  <label class="control-label" for="Id_Persona">Dni</label>
-		  <input class="form-control" id="Id_Persona" type="text" name="Id_Persona">
-		  <p class="help-block">Escribe tú Id</p>
+		  <input class="form-control" id="Id_Persona" type="text" name="Id_Persona" require>
+		  <p class="help-block" id="error">Escribe tú Dni</p>
 		</div>
 		<div class="form-group label-floating">
 		  <label class="control-label" for="Clave">Contraseña</label>
-		  <input class="form-control" id="Clave" type="password" name="Clave">
-		  <p class="help-block">Escribe tú contraseña</p>
+		  <input class="form-control" id="Clave" type="password" name="Clave" require>
+		  <p class="help-block" id="error">Escribe tú contraseña</p>
 		</div>
 		<div class="form-group text-center">
 			<input type="submit" value="Entrar" class="btn" id="btnid">
@@ -44,6 +44,7 @@
 	<script src="./js/sweetalert2.min.js"></script>
 	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="./js/main.js"></script>
+	<!--<script src="./js/appLogin.js"></script>-->
 	<script src="./js/pruebajs.js"></script>
 	<script>
 		$.material.init();
