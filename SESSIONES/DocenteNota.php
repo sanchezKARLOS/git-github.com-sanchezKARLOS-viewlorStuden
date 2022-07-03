@@ -1,3 +1,7 @@
+<head>
+
+<script src="./js/validarcomentario.js"></script>
+</head>
 <?php
 $P_Nombre=$_SESSION['P_Nombre'];
 if(!isset($_SESSION['Id_Roles'])){
@@ -27,17 +31,22 @@ else{
 
 include "basedatos.php";
 $sql =$mysqli->query("SELECT * FROM notas nota
-INNER JOIN personas personas
+INNER JOIN personas persona
 INNER JOIN comentario comentario
-ON nota.Id_IdPersona = personas.Id_Persona and nota.Id_IdPersona = comentario.Id_Persona ");
+ON nota.Id_IdPersona = persona.Id_Persona and nota.Id_IdPersona = comentario.Id_Persona ");
 while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 ?>
 
 <tbody>
 
-<form action="comentarioenvia.php" method="post" name="frommane" id="fromcometar" id="idfrocomentar">
 <tr>
+
+
+
+
 <td><input type="text" name="Id_Persona" id="Id_Persona" class="Id_Persona" value="<?php echo $mostrar['Id_Persona']?>" autocomplete="off" disabled ></td>
+<form action="comentarioenvia.php" method="post" name="frommane" id="fromcometar" id="idfrocomentar">
+
 <td> <?php echo $mostrar['P_Nombre']?></td>
 <td> <?php echo $mostrar['Numero']?></td>
 <td><?php echo $mostrar['Suma']?></td>
@@ -45,13 +54,11 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 <td><?php echo $mostrar['Promedio']?></td>
 
 
-
-
-
-
-
 <td>
 <?php
+
+
+
 date_default_timezone_set('America/Bogota');
 $Fecha_Comentarioactual=date("Y-m-d H:i:s");
 ?>

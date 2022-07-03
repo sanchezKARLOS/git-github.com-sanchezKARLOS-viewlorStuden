@@ -11,11 +11,14 @@
 <?php
 include "basedatos.php";
 $sql =$mysqli->query("SELECT * FROM notas nota
-INNER JOIN personas personas
+INNER JOIN estudiante estudiante
+INNER JOIN personas persona 
 INNER JOIN comentario comentario
-ON nota.Id_IdPersona = personas.Id_Persona and nota.Id_IdPersona = comentario.Id_Persona ");
+ON nota.Id_IdPersona =persona.Id_Persona and estudiante.Id_Comentario = comentario.Id_Comentario  ");
 while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 ?>
+
+
 
 <tbody>
 <tr>
