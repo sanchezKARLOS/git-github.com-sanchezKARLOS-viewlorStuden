@@ -103,7 +103,7 @@
                 <div class="row">
                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="text-bg">
-                      <h1>Encuentra los mejores cursos de matematica basica</h1>
+                      <h1>Encuentra los mejores cursos de matemáticas básicas</h1>
                       <p>no pierdas la oportunidad, totalmente gratis</p>
                       <p>no tienes cuenta?</p>
                     </div>
@@ -157,10 +157,11 @@
     <div class="row">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
-          <h2>Acerca<strong class="yellow">de nosotros</strong></h2>
-          <p> orem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatem maiores eaque similique non distinctio voluptates perspiciatis omnis, repellendus ipsa aperiam, laudantium voluptatum nulla?.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, vo
-          luptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa,  </p>
+          <h2>Acerca<strong class="yellow"> de nosotros</strong></h2>
+          <p>Somos un aplicativo web que contiene las herramientas didácticas y audiovisuales necesarias para que los estudiantes
+           entre primero y quinto grado de primaria se les facilite el desarrollo autónomo de sus
+            conocimientos lógicos-matemáticos junto con las enseñanzas por parte de los docentes realizadas en sus clases.
+          </p>
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -177,8 +178,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2>Nuestro Contactos</h2>
-              <span>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in  </span>
+              <h2>¡Contáctanos!</h2>
+              <span> </span>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
               <div class="row">
@@ -189,7 +190,7 @@
                       <li>
                         <a href="#"><img src="icon/loc.png" alt="#" /></a>Aguachica-Cesar</li>
                         <li>
-                          <a href="#"><img src="icon/email.png" alt="#" /></a>Webdelof25@gmail.com </li>
+                          <a href="#"><img src="icon/email.png" alt="#" /></a>Calbertosanchez@gmail.com </li>
                           <li>
                             <a href="#"><img src="icon/call.png" alt="#" /></a>+57 310-896-3219 </li>
                           </ul>

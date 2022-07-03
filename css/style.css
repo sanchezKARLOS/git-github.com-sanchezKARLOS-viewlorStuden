@@ -937,9 +937,12 @@
      vertical-align: middle;
      margin: 22px 0px;
 }
- .main-menu ul>li:nth-child (6) {
+
+ /*.main-menu ul>li:nth-child (6) {
      padding-right: 0px;
-}
+}*/
+
+
  .nav>li {
      position: inherit;
      display: inline-block;
@@ -1172,11 +1175,13 @@ margin-right: 10px;
      font-size: 50px;
 
  }
+
  .about .about-box p {
-     font-size: 17px;
+background-color: red;
      line-height: 28px;
-     color: #000;
-     padding: 40px 0px;
+     color: #483d3d;
+     padding: 10px 0px;
+     font-size: 25px;
 }
 
  .about .about-box a {
@@ -1483,7 +1488,7 @@ margin-top: 20px;
 }
  .contact .contact_bg .send:hover {
      background-color: #003147;;
-border: #053850; solid 1px;
+border: #053850 solid 1px;
 color: #fff;
 transition: all 0.3s ease-in;
 border-radius:50px; 
@@ -1548,7 +1553,7 @@ padding-bottom: 20px;
 }
  .submit:hover {
      background: #003147;;
-     border: #033750; solid 1px;
+     border: #033750;
      color: #fff;
      transition: all 0.3s ease-in;
 
