@@ -13,7 +13,7 @@ if(Comentario == ""){
 else if(Comentario){
     
     document.getElementById('Comentario').style.background = "#fbfafa";
-    
+    return true;
 }
 
 function cambiar (evento){
@@ -25,7 +25,7 @@ function devolver (evento){
     let elemento = evento.target;
     elemento.style.background = 'green';
 }
-return true;
+
 });
 
 

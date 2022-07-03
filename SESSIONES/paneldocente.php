@@ -94,26 +94,6 @@ else{
 		</div>
 		
 	</section>
-
-	<!-- Notifications area -->
-	<section class="full-box Notifications-area">
-		<div class="full-box Notifications-bg btn-Notifications-area"></div>
-		<div class="full-box Notifications-body">
-			<div class="Notifications-body-title text-titles text-center">
-				Notificationes <i class="zmdi zmdi-close btn-Notifications-area"></i>
-			</div>
-			<div class="list-group">
-			  	<div class="list-group-separator"></div>
-			  	<div class="list-group-item">
-				    <div class="row-content">
-				      
-				    </div>
-			  	</div> 	
-			</div>
-
-		</div>
-	</section>
-
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
 	<script src="./js/sweetalert2.min.js"></script>

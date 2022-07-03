@@ -3,8 +3,7 @@
 <thead>
 <tr>
 
-<th scope="col">Temas</th>
-<th scope="col">Definitiva</th>
+<th scope="col">OBSERVACIONES</th>
 
 </tr>
 </thead>
@@ -18,24 +17,25 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 ?>
 
 <tbody>
-<tr>
-<td>Numero</td>
-<td><?php echo $mostrar['Numero']?></td>
-</tr>
-<tr>
 
-<td>Suma</td>
-<td><?php echo $mostrar['Suma']?></td>
+
+<thead>
+<tr>
+<td><?php echo $mostrar['Fecha_Comentario']?> </td>
 
 </tr>
+</thead>
 
+<thead>
 <tr>
-<td>Resta</td>
-<td><?php echo $mostrar['Resta']?></td>
+    <td><?php echo $mostrar['Comentario']?> </td>
 </tr>
+</thead>
 
 <?php
 }
 ?>
+
+
 </tbody>
 </table>

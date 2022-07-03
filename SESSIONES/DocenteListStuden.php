@@ -68,6 +68,7 @@ else{
 					<!--<small>Editar Perfil</small></h1>-->
 				</div>
 			</div>
+			</section>
 			<!--from-->
 <div class="container-fluid">
 <div class="row">

@@ -20,6 +20,7 @@ else{
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
 	<!-- SideBar -->
 	<section class="full-box cover dashboard-sideBar">
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
@@ -53,12 +54,7 @@ else{
 			<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
-				<li>
-					<a href="#!" class="btn-Notifications-area">
-						<i class="zmdi zmdi-notifications-none"></i>
-					
-					</a>
-				</li>
+				
 				<li>
 					<a href="logutup.php" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>
@@ -72,18 +68,41 @@ else{
 			  <h1 class="text-titles">Nota de examenes realizados</h1>
 			</div>
 		</div>
-		</div>
+	<div>
+	<?php include "DocenteNota.php";?>
+	</div>	
 	</section>
 
 	<!-- Notifications area -->
-	<div>
-		<section class="full-box dashboard-contentPage">
-		<?php
-include "DocenteNota.php";
-		?>
-		</section>
 	
+
+<section class="full-box Notifications-area">
+		<div class="full-box Notifications-bg btn-Notifications-area">
+		
+		</div>
+		
+		<div class="full-box Notifications-body">
+		<div class="Notifications-body-title text-titles text-center">
+				Notificationes <i class="zmdi zmdi-close btn-Notifications-area"></i>
+			</div>
+			<div class="list-group">
+			<div>
+	<?php include "notifcomentario.php";?>
 	</div>
+
+	
+			<div class="row-content"></div>
+			  	<div class="list-group-separator"></div>
+			  	<div class="list-group-item">
+				   
+
+				  
+			  	</div> 	
+			</div>
+
+		</div>
+	</section>
+	
 
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>

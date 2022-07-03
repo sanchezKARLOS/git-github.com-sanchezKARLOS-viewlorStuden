@@ -299,9 +299,11 @@ body, html{
 	font-size: 20px;
 }
 .Notifications-body-title{
+	/* padding-left: 00px; */
+	width: 100%;
 	background-color: #b1b1b1;
 	color: #fff;
-	position: relative;
+	/* position: relative; */
 }
 .Notifications-body-title > i{
 	position: absolute;

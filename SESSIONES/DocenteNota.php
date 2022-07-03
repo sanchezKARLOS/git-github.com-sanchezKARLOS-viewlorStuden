@@ -1,17 +1,25 @@
+<?php
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=2){
+		header("location: index.php");
+	}
+}
+?>
 <table class="table">
 <thead>
 
 <tr>
-
+<th scope="col">Codigo Id</th>
 <th scope="col">Nombre Estudiante</th>
 <th scope="col">Numero</th>
 <th scope="col">Suma</th>
 <th scope="col">Resta</th>
 <th scope="col">Definitiva</th>
-<th scope="col"></th>
-<th scope="col">Agregar Comentario</th>
-
-
+<th scope="col"><i class="zmdi zmdi-notifications-none"></i>Observacion</th>
 </tr>
 </thead>
 <?php
@@ -26,22 +34,37 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 ?>
 <tbody>
 <tr>
+<td> <?php echo $mostrar['Id_Persona']?></td>
 <td> <?php echo $mostrar['P_Nombre']?></td>
 <td> <?php echo $mostrar['Numero']?></td>
 <td><?php echo $mostrar['Suma']?></td>
 <td><?php echo $mostrar['Resta']?></td>
 <td><?php echo $mostrar['Promedio']?></td>
-<td><?php echo $mostrar['Comentario']?></td>
-<td><?php echo $mostrar['Fecha_Comentario']?></td>
 
+<td><a  href="#" class="btn-Notifications-area">
+
+	<button type="submit">Comentar</button>
+</a>
+</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tr>
+
+
+</tbody>
 <?php
 }
 ?>
-<td><form action="comentarioenvia.php" method="POST" name="" id="fromcometar" id="idfrocomentar">
-<td><textarea name="Comentario" id="Comentario" class="Comentario" placeholder="Escribe Comentario" require></textarea></td>
-<td><input id="enviar" type="button" value="Enviar"></td>
-</td>
-</tr>
-</form>
-</tbody>
-</table>x
+</table>
