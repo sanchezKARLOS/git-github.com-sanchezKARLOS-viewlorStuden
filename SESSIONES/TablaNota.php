@@ -2,7 +2,7 @@
 <table class="table">
 <thead>
 <tr>
-
+<th scope="col">Codigo Id</th>
 <th scope="col">Temas</th>
 <th scope="col">Definitiva</th>
 
@@ -19,17 +19,21 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 
 <tbody>
 <tr>
+<td><?php echo $mostrar['Id_IdPersona']?></td>
 <td>Numero</td>
 <td><?php echo $mostrar['Numero']?></td>
+<td><?php echo $mostrar['Comentario']?></td>
+
 </tr>
 <tr>
-
+<td><?php echo $mostrar['Id_IdPersona']?></td>
 <td>Suma</td>
 <td><?php echo $mostrar['Suma']?></td>
 
 </tr>
 
 <tr>
+<td><?php echo $mostrar['Id_IdPersona']?></td>
 <td>Resta</td>
 <td><?php echo $mostrar['Resta']?></td>
 </tr>

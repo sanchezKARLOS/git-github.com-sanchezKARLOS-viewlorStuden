@@ -9,11 +9,12 @@ if(Comentario == ""){
     document.getElementById('Comentario').focus();
     document.getElementById('Comentario').addEventListener('focus', cambiar);
 
+
 }
-else if(Comentario){
+else{
     
     document.getElementById('Comentario').style.background = "#fbfafa";
-    return true;
+  
 }
 
 function cambiar (evento){
