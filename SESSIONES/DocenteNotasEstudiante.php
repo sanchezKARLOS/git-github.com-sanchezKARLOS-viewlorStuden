@@ -68,10 +68,6 @@ else{
 	</section>
 
 	<!-- Notifications area -->
-	
-
-¡
-	
 
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>

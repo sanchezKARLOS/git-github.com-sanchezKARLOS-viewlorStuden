@@ -8,7 +8,7 @@ if(Comentario == ""){
 
     document.getElementById('Comentario').focus();
     document.getElementById('Comentario').addEventListener('focus', cambiar);
-
+     return false;
 
 }
 else{

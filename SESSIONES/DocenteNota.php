@@ -1,5 +1,4 @@
 <head>
-
 <script src="./js/validarcomentario.js"></script>
 </head>
 <?php
