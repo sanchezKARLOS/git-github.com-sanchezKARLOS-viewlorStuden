@@ -67,13 +67,10 @@ else{
 		
 			<!--from-->
 <div class="container-fluid">
-<div class="row">
+
 <div class="col-xs-12">
 <div id="myTabContent" class="tab-content">
 <div class="tab-pane fade active in" id="new">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xs-12 col-md-10 col-md-offset-1">
 <form action="studendb.php" class="from" id="from" name="nafrom" method="post" onsubmit="return control();"  >												
     <div class="inblcdiv1 inblcdiv2">
     <div class="regforblock">
@@ -88,7 +85,7 @@ else{
     <input type="text" name="P_Nombre" id="P_Nombre" class="P_Nombre" placeholder="Ej: Juan." pattern=".{3,25}" autocomplete="off" require></label> 
 	<div class="regforblock">
     <label for="nombre" id="labelnombre">Segundo Nombre
-    <input type="text" name="S_Nombre" id="S_Nombre" class="S_Nombre"  pattern=".{3,25}" autocomplete="off" ></label> 
+    <input type="text" name="S_Nombre" id="S_Nombre" class="S_Nombre" placeholder="Ej: Andres." pattern=".{3,25}" autocomplete="off" ></label> 
     </div>
 </div>
     </div>
@@ -101,7 +98,7 @@ else{
    
 	<div class="regforblock">
       <label for="apellido" id="labelapellido">Segundo Apellido
-    <input type="text" name="S_Apellido" id="S_Apellido" class="S_Apellido" pattern=".{3,25}" autocomplete="off" ></label>
+    <input type="text" name="S_Apellido" id="S_Apellido" class="S_Apellido" placeholder="Ej: Angarita." pattern=".{3,25}" autocomplete="off" ></label>
    </div>
 </div>
 </div>
@@ -146,7 +143,7 @@ $query =mysqli_connect("localhost", "root", "", "softwareducativo");
 <div class="inblcdiv1 inblcdiv2">
 <div class="regforblock">
       <label for="grado" id="labelgrado">Grado
-    <input type="text" name="Grado" id="Grado" class="Grado"  placeholder="Ej: 8." autocomplete="off" require></label>
+    <input type="text" name="Grado" id="Grado" class="Grado"  placeholder="Ej: Cuarto." autocomplete="off" require></label>
    </div>
 </div>
 <div class="inblcdiv1 inblcdiv2">
@@ -160,13 +157,10 @@ $query =mysqli_connect("localhost", "root", "", "softwareducativo");
 		<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
 												</p>
 											</form>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+			
 			</div>
 			</section>
 

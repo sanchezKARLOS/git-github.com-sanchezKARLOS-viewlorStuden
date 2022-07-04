@@ -67,7 +67,7 @@ else{
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">Introduccion a la <small> suma</small></h1>
+			  <h1 class="text-titles">Introduccion a la Suma</h1>
 			</div>
 		</div>
 	<div>

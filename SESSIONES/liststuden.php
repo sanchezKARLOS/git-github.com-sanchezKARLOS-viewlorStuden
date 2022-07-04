@@ -77,15 +77,11 @@ else{
 			</div>
 			<!--from-->
 <div class="container-fluid">
-<div class="row">
+
 <div class="col-xs-12">
 <div id="myTabContent" class="tab-content">
 <div class="tab-pane fade active in" id="new">
 <div class="container-fluid">
-<div class="row">
-<div class="col-xs-12 col-md-10 col-md-offset-1">
-</div>
-</div>
 
 <div>
 <div>
@@ -154,7 +150,6 @@ if($mostrar['Estado']=="1"){
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
 <!--end from-->	
 	<!-- Notifications area -->	

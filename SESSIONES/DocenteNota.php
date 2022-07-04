@@ -17,7 +17,6 @@ else{
 
 <tr>
 <th scope="col">Codido Id</th>
-<th scope="col">Nombre Estudiante</th>
 <th scope="col">Numero</th>
 <th scope="col">Suma</th>
 <th scope="col">Resta</th>
@@ -28,7 +27,7 @@ else{
 <?php
 
 include "basedatos.php";
-$sql =$mysqli->query("SELECT estudiante.Id_IdPersona as Id_Persona, estudiante.Id_IdEstudiante as Id_Estudiante , Numero, Suma, Resta, promedio FROM estudiante estudiante 
+$sql =$mysqli->query("SELECT estudiante.Id_IdPersona as Id_Persona, estudiante.Id_IdEstudiante as Id_Estudiante ,Numero, Suma, Resta, promedio FROM estudiante estudiante 
 INNER JOIN notas nota 
 INNER JOIN comentario comentario 
 ON estudiante.Id_IdEstudiante = comentario.Id_Estudiante and estudiante.Id_IdNota = nota.Id_Notas

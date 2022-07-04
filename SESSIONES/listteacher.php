@@ -26,7 +26,13 @@
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
 					<a href="home.php">
+					
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
+					</a>
+				</li>
+				<li>
+					<a href="./teacher.php">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>Registrar
 					</a>
 				</li>
 			</ul>
@@ -54,7 +60,6 @@
 			</div>
 			<!--from-->
 <div class="container-fluid">
-<div class="row">
 <div class="col-xs-12">
 <div id="myTabContent" class="tab-content">
 <div class="tab-pane fade active in" id="new">
@@ -102,9 +107,7 @@ if($mostrar['Estado']=="1"){
 	P_Apellido=<?php echo $mostrar['P_Apellido']?> &
     S_Apellido=<?php echo $mostrar['S_Apellido']?> &
 	Clave=<?php echo $mostrar['Clave']?>
-
     ">Editar</a>
-<a href="./teacher.php">Registrar</a>
 </td>
 
 </tr>
@@ -118,7 +121,6 @@ if($mostrar['Estado']=="1"){
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
 <!--end from-->	
 	<!-- Notifications area -->	
