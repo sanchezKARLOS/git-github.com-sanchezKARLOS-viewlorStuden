@@ -16,10 +16,10 @@ else{
 	<title>Numeros</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./js/logica.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./ajax/query.js"></script>
+    
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 </head>
@@ -285,27 +285,35 @@ else{
 
                         
                         <br>
-                     
-                        <form action="" method="POST" id="envfroajax">
+                   
+                      
+                        <form  method="post" id="envfroajax" action="javascript:enviar()"> 
                         <button  id="EnviaTest" onclick="corregir()"> Terminar </button>
-                        <h2>Califiacion: <span  name ="resultado" id="resultado"></span></h2>         
-                        </form>
+                        <h2>Califiacion: 
+                            <span  name ="resultado" id="resultado"></span></h2> 
+                     </form> 
+                
+
+  
                     </div>
-        </div>        
+        </div>     
+
+       
+
+<script src="./ajax/query.js"></script>
+<script type="text/javascript">   
+                    function enviar(){
+                        var resultado = '<?php  $resultado ?>';
+                        
+                        
+                    //     document.forms.envfroajax.resultado.value;
+                    //   windows.location = "enviartest.php?resul="+ resultado;
+
+
+
+                    }
+                    </script>
 </body>
 </html>
-                            <script type="text/javascript">
-                                 $(document).ready(function(){
-                                    $('#EnviarTest').click(function(){
-                             var datos =$('#envfroajax').serialize();
-                            alert(datos);  
-                              $.ajax({
-                             type :"POST",
-                             url: "registrotest.php",
-                             data:datos,
-                            success:function(){
-  }
-    });
-});
- });
-                            </script>
+
+                           

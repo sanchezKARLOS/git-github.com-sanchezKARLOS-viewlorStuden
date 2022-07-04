@@ -28,7 +28,7 @@
             <div class="course-description">
               <div class="course-id" tabindex="2050" title="202202">2022</div>
               <div class="cls-ins-title" tabindex="2051" title="Switching, Routing, and Wireless Essentials">Matematicas basicas</div>
-              <div class="cls-ins-name" tabindex="2054" title="Universidad Popular del Cesar Seccional Aguachica">Universidad Popular del Cesar Seccional Aguachica</div>
+              <div class="cls-ins-name" tabindex="2054" title="Universidad Popular del Cesar Seccional Aguachica"></div>
             </div>
                     <div class="course-launcher">
                 <a href="RealizarTlQuizes.php" tabindex="2053"><i class="icon-right-arrow icon-small" aria-hidden="true"></i><br>Iniciar </a></div>
@@ -55,9 +55,9 @@
                     </div>
                       <div class="foot-right">
             
-                    <div class="dates" aria-label="01 Mar - 31 Jul 2022" tabindex="2055">25 junio - 31 Jul 2022</div>
-                  <div class="acad-title" aria-label="CCNAv7: Switching, Routing, and Wireless Essentials" tabindex="2056">Curso de Suma</div>
-                                            <div class="end-date-text" tabindex="2057" aria-label="Please&nbsp;finish by 31 Jul 2022">Finalizar 31 Jul 2022 </div>
+                    <div class="dates" aria-label="01 Mar - 31 Jul 2022" tabindex="2055">2 julio - 31 Jul 2022</div>
+                  <div class="acad-title" aria-label="CCNAv7: Switching, Routing, and Wireless Essentials" tabindex="2056">Cursos</div>
+                   <div class="end-date-text" tabindex="2057" aria-label="Please&nbsp;finish by 31 Jul 2022">Finalizar 31 Jul 2022 </div>
                             </div>
                         </div>
                       <!-- Un-enroll link for Global Academy student  use-ajax-->

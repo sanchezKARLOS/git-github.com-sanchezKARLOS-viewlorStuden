@@ -64,12 +64,6 @@ else{
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
 				<li>
-					<a href="#!" class="btn-Notifications-area">
-						<i class="zmdi zmdi-notifications-none"></i>
-						<span class="badge">1</span>
-					</a>
-				</li>
-				<li>
 					<a href="logutup.php" class="btn-exit-system">
 						<i class="zmdi zmdi-power"></i>
 					</a>
@@ -91,27 +85,6 @@ else{
 	</section>
 
 	<!-- Notifications area -->
-	<section class="full-box Notifications-area">
-		<div class="full-box Notifications-bg btn-Notifications-area"></div>
-		<div class="full-box Notifications-body">
-			<div class="Notifications-body-title text-titles text-center">
-				Notificationes <i class="zmdi zmdi-close btn-Notifications-area"></i>
-			</div>
-			<div class="list-group">
-			  	<div class="list-group-separator"></div>
-			  	<div class="list-group-item">
-				    <div class="row-action-primary">
-						<i class="zmdi zmdi-alert-triangle"></i>
-				    </div>
-				    <div class="row-content">
-				      	<div class="least-content">5m</div>
-				      	<h4 class="list-group-item-heading">Ingeniero Erney</h4>
-				      	<p class="list-group-item-text">despues de las 2:00 PM habilito el curso</p>
-				    </div>
-			  	</div> 	
-			</div>
-		</div>
-	</section>
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
 	<script src="./js/sweetalert2.min.js"></script>

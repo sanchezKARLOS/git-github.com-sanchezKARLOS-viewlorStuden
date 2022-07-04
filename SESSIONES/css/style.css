@@ -5,7 +5,8 @@
 }
 
 .container section{
-    border: 2px solid rgb(194, 184, 252);
+    background: #e3e8eb;
+    border: 2px solid rgb(0 49 71);
     border-radius: 7px;
     padding: 10px;
     display: grid;
@@ -25,7 +26,8 @@ label{
     cursor: pointer;
     border: 1px dashed rgb(94, 118, 255);
     margin-bottom: 3px;
-    color: black;
+    color: #ffffff;
+    background: #003147b0
 }
 
 label:hover{
@@ -34,7 +36,12 @@ label:hover{
 
 .video{
     text-align: center;
-    
+    background: #fff5f5;
+    border: 4px solid;
+    border-color: #003147;
+    border-radius: 8px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 button{

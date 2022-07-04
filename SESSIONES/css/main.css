@@ -639,8 +639,10 @@ div#segun2 {
 }
 
 div#terc3 {
-    background: #07456082;
+
+    padding-top: 20px;
+    background: #78adc582;
     width: 80%;
-    height: 90%;
+    height: 100%;
     margin: 0 auto;
 }

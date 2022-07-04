@@ -37,7 +37,7 @@ while ($mostrar=mysqli_fetch_array($resultado))
 
 <tbody>
 <tr>
-<td></td>
+<td><?=$Id_Persona?></td>
 <td>Numero</td>
 <td><?php echo $mostrar['Numero']?></td>
 <td><?php echo $mostrar['comentario']?></td>

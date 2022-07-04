@@ -18,6 +18,7 @@ else{
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<script src="./ajax/jquery-3.2.1.min"></script>
 </head>
 <body>
 	<section class="full-box cover dashboard-sideBar">

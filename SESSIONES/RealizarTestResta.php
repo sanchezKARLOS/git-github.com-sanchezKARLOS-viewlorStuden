@@ -1,9 +1,11 @@
 <?php
 session_start();
 $P_Nombre=$_SESSION['P_Nombre'];
+
 if(!isset($_SESSION['Id_Roles'])){
 	header("location: index.php");
 }
+
 else{
 	if($_SESSION['Id_Roles'] !=3){
 		header("location: index.php");

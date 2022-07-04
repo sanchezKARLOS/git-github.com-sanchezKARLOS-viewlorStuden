@@ -29,20 +29,12 @@ function corregir(){
     for (let i = 0; i < correctas.length; i++) {
         if (correctas[i] ==opciones_elegidas[i]) {
             cantidad_correctas++;
-        }
-    }
+        }   
 
+    }
     document.getElementById("resultado").innerHTML = cantidad_correctas;
 
-    // window.alert(cantidad_correctas);
-    
 }
-
-
-
-
-
-
 
 
 // Arreglo con las respuestas correctasSumas
