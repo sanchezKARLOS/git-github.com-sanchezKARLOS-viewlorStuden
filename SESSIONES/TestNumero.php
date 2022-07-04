@@ -19,6 +19,7 @@ else{
 	<link rel="stylesheet" href="./css/main.css">
     <script src="./js/logica.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./ajax/query.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 </head>
@@ -26,6 +27,7 @@ else{
 
         <div class="card-body">
         <div class="container">
+      
                         <section class="p0">
                             <div class="divcenimnum">
                             <h3>1. ¿Que numero es?</h3>
@@ -281,14 +283,29 @@ else{
                             </label>
                         </section>
 
-                        <button onclick="corregir()"> Terminar </button>
+                        
                         <br>
-                        <h2>Califiacion: <span id="resultado"></span></h2>
-                        <?php
-                          
-
-                        ?>
+                     
+                        <form action="" method="POST" id="envfroajax">
+                        <button  id="EnviaTest" onclick="corregir()"> Terminar </button>
+                        <h2>Califiacion: <span  name ="resultado" id="resultado"></span></h2>         
+                        </form>
                     </div>
         </div>        
 </body>
 </html>
+                            <script type="text/javascript">
+                                 $(document).ready(function(){
+                                    $('#EnviarTest').click(function(){
+                             var datos =$('#envfroajax').serialize();
+                            alert(datos);  
+                              $.ajax({
+                             type :"POST",
+                             url: "registrotest.php",
+                             data:datos,
+                            success:function(){
+  }
+    });
+});
+ });
+                            </script>
