@@ -55,14 +55,14 @@
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
                       <li class="active"> <a href="index.php">Inicio</a> </li>
-                      <li> <a href="#about">Saber mas</a> </li>
-                      <li> <a href="#footer">Contactanos</a> </li>
+                      <li> <a href="#about">Saber mÁs</a> </li>
+                      <li> <a href="#footer">ContÁctanos</a> </li>
                      </ul>
                    </nav>
                  </div>
                </div> 
                <div class="mean-last">
-              <a href=""><a href="SESSIONES/index.php">Inicia Sesiòn</a></div> </a>           
+              <a href=""><a href="SESSIONES/index.php">Inicia Sesión</a></div> </a>           
              </div>
            </div>
          </div>
@@ -85,7 +85,7 @@
                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="text-bg">
                       <h1>Software educativo</h1>
-                      <p>Problemas de matematica basica</p>
+                      <p>Problemas de matemáticas básicas</p>
                     </div>
                   </div>
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
@@ -104,8 +104,8 @@
                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="text-bg">
                       <h1>Encuentra los mejores cursos de matemáticas básicas</h1>
-                      <p>no pierdas la oportunidad, totalmente gratis</p>
-                      <p>no tienes cuenta?</p>
+                      <p>¡No pierdas la oportunidad, totalmente gratis!
+                      </p>
                     </div>
                   </div>
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
@@ -123,8 +123,8 @@
                 <div class="row">
                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="text-bg">
-                      <h1>Conocenos mas, te gustara ser parte de nosotros</h1>
-                      <h2>conviertete en un profesinal</h2>
+                      <h1>Conócenos más, te gustará ser parte de nosotros</h1>
+                      <h2>Conviértete en un profesional</h2>
                     </div>
                   </div>
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
@@ -185,7 +185,7 @@
               <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
                   <div class="address">
-                    <h3>Contactanos </h3>
+                    <h3>Contáctanos </h3>
                     <ul class="loca">
                       <li>
                         <a href="#"><img src="icon/loc.png" alt="#" /></a>Aguachica-Cesar</li>
@@ -207,13 +207,13 @@
                         <div class="address">
                           <h3>Cursos</h3>
                           <ul class="Menu_footer">
-                            <li><a href="#">Matematicas Basicas</a> </li>
+                            <li><a href="#">Matemáticas Basicas</a> </li>
                           </ul>
                         </div>
                       </div>
                       <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="address">
-                          <h3>Informacion</h3>
+                          <h3>Información</h3>
                           <ul class="Links_footer">
                             <li><a href="#">Escuelas</a> </li>
                             <li><a href="#">Admisiones</a> </li>

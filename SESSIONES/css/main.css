@@ -620,3 +620,26 @@ body, html{
 	position: relative;
 	padding-top: 200px;
 }
+
+div#prim1 {
+    background: red;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+div#segun2 {
+    background: blue;
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+div#terc3 {
+    background: green;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+}
