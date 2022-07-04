@@ -99,9 +99,7 @@ include "TablaNota.php";
 				    </div>
 				    <div class="row-content">
 
-						  <?php
-               include "mostrascomentariodocente.php";	
-             		?>
+				
 				      
 				    </div>
 			  	</div> 	

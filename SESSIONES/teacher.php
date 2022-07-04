@@ -1,3 +1,15 @@
+<?php
+session_start();
+$P_Nombre=$_SESSION['P_Nombre'];
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=1){
+		header("location: index.php");
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,7 +26,7 @@
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				Matematica Basica <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			<small>Bienvenido <?php echo $P_Nombre; ?></small>
 			</div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
@@ -29,16 +41,6 @@
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
 				</li>
-				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i> Configuracion Estudio<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="erro404.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>Datos de estudio</a>
-						</li>
-					</ul>
-				</li>
 			</ul>
 		</div>
 	</section>
@@ -50,11 +52,6 @@
 			<ul class="full-box list-unstyled">
 			<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
-				</li>
-				<li>
-					<a href="#!" class="btn-exit-system">
-						<i class="zmdi zmdi-power"></i>
-					</a>
 				</li>
 			</ul>
 		</nav>

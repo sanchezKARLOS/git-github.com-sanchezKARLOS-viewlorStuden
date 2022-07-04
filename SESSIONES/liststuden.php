@@ -1,5 +1,6 @@
 <?php
 session_start();
+$Id_Persona=$_SESSION['Id_Persona'];
 $P_Nombre=$_SESSION['P_Nombre'];
 if(!isset($_SESSION['Id_Roles'])){
 	header("location: index.php");
@@ -40,7 +41,13 @@ else{
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
 				</li>
+				<li>
+					<a href="./student.php">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>Registrar
+					</a>
+				</li>
 			</ul>
+
 		</div>
 	</section>
 
@@ -93,7 +100,7 @@ else{
 			<td scope="col">Codigo Docente </td>
             <td scope="col">Grado</td>
 			<td scope="col">Estado</td>
-			<td scope="col"><i class="zmdi zmdi-settings"></i> Opciones</td>
+		<td scope="col"><i class="zmdi zmdi-settings"></i> Opciones</td>
 			
 			
         </tr>
@@ -101,7 +108,7 @@ else{
 <?php
 include "basedatos.php";
 $sql =$mysqli->query("SELECT * FROM personas persona
-INNER JOIN estudiante estudiante ON persona.Id_Persona = estudiante.Id_IdPersona");
+INNER JOIN estudiante estudiante ON persona.Id_Persona = estudiante.Id_IdPersona and persona.Id_Roles = 3");
 while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 ?>
 <tbody> 
@@ -132,8 +139,6 @@ if($mostrar['Estado']=="1"){
 	Cd_Docente=<?php echo $mostrar['Cd_Docente']?> &
     Grado=<?php echo $mostrar['Grado']?> &
 	Clave=<?php echo $mostrar['Clave']?>">Editar</a>
-	
-<a href="./student.php">Registrar</a>
 </td>
 
 </tr>

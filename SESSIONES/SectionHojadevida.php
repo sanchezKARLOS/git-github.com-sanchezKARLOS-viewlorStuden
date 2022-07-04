@@ -50,17 +50,6 @@ else{
 				<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
-				<li>
-					<a href="#!" class="btn-Notifications-area">
-						<i class="zmdi zmdi-notifications-none"></i>
-						<span class="badge">1</span>
-					</a>
-				</li>
-				<li>
-					<a href="logutup.php" class="btn-exit-system">
-						<i class="zmdi zmdi-power"></i>
-					</a>
-				</li>
 			</ul>
 		</nav>
 

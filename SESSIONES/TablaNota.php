@@ -1,3 +1,28 @@
+<?php
+
+include "basedatos.php";
+
+if(!isset($_SESSION['Id_Roles'])){
+	header("location: index.php");
+}
+else{
+	if($_SESSION['Id_Roles'] !=3){
+		header("location: index.php");
+	}
+}
+
+$Id_Persona=$_SESSION ['Id_Persona'];
+
+$sql = ("SELECT comentario, Numero, Suma, Resta FROM estudiante estudiante 
+INNER JOIN notas nota 
+INNER JOIN comentario comentario  
+ON estudiante.Id_IdPersona = {$Id_Persona} and estudiante.Id_IdEstudiante = nota.Id_Estudiante and estudiante.Id_IdEstudiante = comentario.Id_Estudiante");
+
+$resultado = mysqli_query($mysqli, $sql);
+
+while ($mostrar=mysqli_fetch_array($resultado))
+{
+?>
 
 <table class="table">
 <thead>
@@ -8,35 +33,26 @@
 
 </tr>
 </thead>
-<?php
-include "basedatos.php";
-$sql =$mysqli->query("SELECT * FROM notas nota
-INNER JOIN estudiante estudiante
-INNER JOIN personas persona 
-INNER JOIN comentario comentario
-ON nota.Id_IdPersona =persona.Id_Persona and estudiante.Id_Comentario = comentario.Id_Comentario  ");
-while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
-?>
-
 
 
 <tbody>
 <tr>
-<td><?php echo $mostrar['Id_IdPersona']?></td>
+<td></td>
 <td>Numero</td>
 <td><?php echo $mostrar['Numero']?></td>
-<td><?php echo $mostrar['Comentario']?></td>
+<td><?php echo $mostrar['comentario']?></td>
+
 
 </tr>
 <tr>
-<td><?php echo $mostrar['Id_IdPersona']?></td>
+<td><?=$Id_Persona?></td>
 <td>Suma</td>
 <td><?php echo $mostrar['Suma']?></td>
 
 </tr>
 
 <tr>
-<td><?php echo $mostrar['Id_IdPersona']?></td>
+<td><?=$Id_Persona?></td>
 <td>Resta</td>
 <td><?php echo $mostrar['Resta']?></td>
 </tr>
@@ -46,3 +62,4 @@ while ($mostrar = $sql->fetch_array(MYSQLI_BOTH)){
 ?>
 </tbody>
 </table>
+

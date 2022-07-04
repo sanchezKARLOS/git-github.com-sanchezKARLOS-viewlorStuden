@@ -23,6 +23,7 @@ if(isset($_POST['Id_Persona']) &&  isset($_POST['Clave']))
                
                 if($row['Estado']==1){
 
+
                     $_SESSION ['Id_Persona'] = $row ['Id_Persona'];
                     $_SESSION ['Id_Roles']= $row ['Id_Roles'];
                     $_SESSION ['P_Nombre']= $row ['P_Nombre'];

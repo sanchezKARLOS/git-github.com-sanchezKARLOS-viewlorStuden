@@ -284,6 +284,10 @@ else{
                         <button onclick="corregir()"> Terminar </button>
                         <br>
                         <h2>Califiacion: <span id="resultado"></span></h2>
+                        <?php
+                          
+
+                        ?>
                     </div>
         </div>        
 </body>

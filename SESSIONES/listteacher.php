@@ -29,16 +29,6 @@
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i>volver
 					</a>
 				</li>
-				<li>
-					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i> Configuracion Estudio<i class="zmdi zmdi-caret-down pull-right"></i>
-					</a>
-					<ul class="list-unstyled full-box">
-						<li>
-							<a href="erro404.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>Datos de estudio</a>
-						</li>
-					</ul>
-				</li>
 			</ul>
 		</div>
 	</section>
@@ -50,11 +40,6 @@
 			<ul class="full-box list-unstyled">
 			<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
-				</li>
-				<li>
-					<a href="#!" class="btn-exit-system">
-						<i class="zmdi zmdi-power"></i>
-					</a>
 				</li>
 			</ul>
 		</nav>
