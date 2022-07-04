@@ -54,12 +54,6 @@ else{
 			<li class="pull-left">
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
-				
-				<li>
-					<a href="logutup.php" class="btn-exit-system">
-						<i class="zmdi zmdi-power"></i>
-					</a>
-				</li>
 			</ul>
 		</nav>
 		<!-- Content page -->
@@ -76,32 +70,7 @@ else{
 	<!-- Notifications area -->
 	
 
-<section class="full-box Notifications-area">
-		<div class="full-box Notifications-bg btn-Notifications-area">
-		
-		</div>
-		
-		<div class="full-box Notifications-body">
-		<div class="Notifications-body-title text-titles text-center">
-				Notificationes <i class="zmdi zmdi-close btn-Notifications-area"></i>
-			</div>
-			<div class="list-group">
-			<div>
-	<?php include "notifcomentario.php";?>
-	</div>
-
-	
-			<div class="row-content"></div>
-			  	<div class="list-group-separator"></div>
-			  	<div class="list-group-item">
-				   
-
-				  
-			  	</div> 	
-			</div>
-
-		</div>
-	</section>
+¡
 	
 
 	<!--====== Scripts -->
